@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "0.0.0",
+  "displayName": "Web Widget Demo",
+  "summary": "The Markdown to use for the main readme of this package.",
+  "icons": [],
+  "path": "dist/my-widget.esm.js",
+  "fallbackPath": "dist/dist/my-widget.system.js",
+  "slots": [],
+  "cssParts": [],
+  "cssProperties": []
+}

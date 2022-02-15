@@ -1,0 +1,25 @@
+{
+  "name": "@examples/root-config",
+  "source": "src/index.js",
+  "main": "dist/root-config.cjs.js",
+  "module": "dist/root-config.esm.js",
+  "system": "dist/root-config.system.js",
+  "scripts": {
+    "start": "web-dev-server --config scripts/web-dev-server.config.mjs",
+    "build": "rollup -c scripts/rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@web/dev-server": "^0.1.29",
+    "@web/dev-server-import-maps": "^0.0.6",
+    "@web/rollup-plugin-html": "^1.10.1",
+    "rollup": "^2.67.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@growing-web/web-router": "^0.0.1",
+    "@web-widget/container": "^0.0.22",
+    "@web-widget/system-loader": "^0.0.22"
+  }
+}
