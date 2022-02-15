@@ -8,7 +8,7 @@ export default () => ({
         <h2>下一步</h2>
         <h3>1. 添加共享依赖</h3>
         <ul>
-          <li>找到导入映射文件 web-importmap.json</li>
+          <li>找到 index.html <code>importmap</code></li>
           <li>添加你需要的共享依赖，例如：
   <pre><code>
   "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
@@ -19,8 +19,8 @@ export default () => ({
         <h3>2. 创建你的微应用</h3>
         <ul>
           <li>复制当前 package 上一级目录中的 example-* 目录（例如复制 example-vue 至 news），并且成功运行它</li>
-          <li>返回到 root-config 并使用你的项目名称更新导入映射 web-importmap.json（建议使用应用程序的 package.json 名称字段）</li>
-          <li>编辑 web-routes.json 并且添加你的应用程序名称</li>
+          <li>返回到 root-config 并使用你的项目名称更新导入映射 <code>importmap</code>（建议使用应用程序的 package.json 名称字段）</li>
+          <li>编辑 index.html <code>web-router</code> 并且添加你的应用程序名称</li>
           <li>删除当前示例欢迎页面代码</li>
           <li>重新启动开发服务器</li>
         </ul>
