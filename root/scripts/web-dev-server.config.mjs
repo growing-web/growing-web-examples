@@ -1,4 +1,4 @@
-
+import fs from 'fs';
 import { transformHtml } from './transform-html.mjs';
 import { importMapsPlugin }  from '@web/dev-server-import-maps';
 
@@ -13,7 +13,12 @@ export default {
       transform(context) {
         if (context.response.is('html')) {
           return {
-            body: transformHtml(context.body, {}, 'development'),
+            body: transformHtml(context.body, {
+              get importmap() {
+                return fs.readFileSync(`${process.cwd()}/dist/importmap.json`, 'utf8');
+              },
+              entry: '/src/index.js'
+            }, 'development'),
           };
         }
       },

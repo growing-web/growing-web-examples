@@ -3,7 +3,6 @@ export default () => ({
     container.innerHTML = `
       <main>
         <h1>Welcome</h1>
-        <h5>to your growing-web root config!</h5>
         <p>此页面根据你的根配置呈现。</p>
         <h2>下一步</h2>
         <h3>1. 添加共享依赖</h3>

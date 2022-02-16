@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Root Config</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+
+  <template service="development">
+    <script type="importmap:remote">${importmap}</script>
+    <script>
+      (function() {
+        const devImportmapNode = document.querySelector('script[type="importmap:remote"]');
+        const importmap = JSON.parse(devImportmapNode.text);
+
+        if (!importmap.imports['@examples/index']) {
+          importmap.imports['@examples/index'] = "/src/welcome.widget.js";
+        }
+        const namespace = 'importmap-override:';
+        const override = {};
+
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key.startsWith(namespace)) {
+            override[key.replace(namespace, '')] = localStorage.getItem(key);
+          }
+        }
+
+        importmap.imports = { ...importmap.imports, ...override };
+
+        const script = document.createElement('script');
+        script.type = 'importmap';
+        script.text = JSON.stringify(importmap, null, 2);
+        document.currentScript.before(script);
+      })();
+    </script>
+  </template>
+
+  <template service="production">
+    <script type="systemjs-importmap">
+      ${importmap}
+    </script>
+  </template>
+
+  <script type="application/pfd+json">{}</script>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app
+  </noscript>
+
+  <web-router>
+    <web-route path="/" element="web-widget" import="@examples/index"></web-route>
+    <web-route path="*" element="web-widget" import="@examples/404"></web-route>
+  </web-router>
+
+  <template service="development">
+    <script type="module" src="${entry}"></script>
+  </template>
+
+  <template service="production">
+    <script src="${entry}"></script>
+  </template>
+</body>
+
+</html>

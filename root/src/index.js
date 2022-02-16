@@ -1,3 +1,5 @@
+import 'systemjs/dist/s.js';
+import 'systemjs/dist/extras/amd.js';
 import { HTMLWebWidgetElement, WebWidgetDependencies } from '@web-widget/container';
 import '@web-widget/system-loader';
 import '@growing-web/web-router';

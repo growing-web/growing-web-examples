@@ -1,12 +1,10 @@
 {
-  "name": "@examples/home",
+  "name": "@examples/app",
   "version": "0.0.0",
-  "source": "src/main.js",
-  "main": "dist/home.cjs.js",
-  "module": "dist/home.esm.js",
-  "system": "dist/home.system.js",
+  "private": true,
+  "main": "src/main.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3001",
     "build": "vite build"
   },
   "files": [
@@ -24,15 +22,12 @@
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^3.0.0",
-    "rollup-plugin-css-only": "^3.1.0",
+    "config": "workspace:*",
     "@web-widget/container": "^0.0.12",
     "vite-plugin-vue2": "^1.9.2",
     "vite-plugin-shadow-dom-css": "^0.0.1",
     "vue-template-compiler": "^2.6.14",
     "vite": "^2.6.4",
-    "@babel/core": "^7.16.5",
-    "@rollup/pluginutils": "^4.1.2",
-    "resolve": "^1.20.0"
+    "vite-preset": "workspace:*"
   }
 }
