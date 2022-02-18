@@ -1,0 +1,23 @@
+{
+  "publicPath": "/",
+  "applications": ["@apps/*"],
+  "sharedDependencies": {
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "element": "web-widget",
+      "properties": {
+        "import": "@apps/index"
+      }
+    },
+    {
+      "path": "*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@apps/404"
+      }
+    }
+  ]
+}

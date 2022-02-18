@@ -9,7 +9,7 @@ const cwd = process.cwd();
 const { name, main, } = JSON.parse(fs.readFileSync(`${cwd}/package.json`, 'utf8'));
 
 const filename = name.replace(/^@[^/]+\//, '').replace(/\//g, '-');
-const outDir = 'dist/';
+const outDir = `../../dist/${name.replace('@', '')}`;
 
 // https://vitejs.dev/config/
 export default defineConfig({

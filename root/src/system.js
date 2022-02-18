@@ -1,2 +1,2 @@
-import 'systemjs/dist/s.js';
-import 'systemjs/dist/extras/amd.js';
+import 'systemjs/dist/s.min.js';
+import 'systemjs/dist/extras/amd.min.js';

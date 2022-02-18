@@ -8,8 +8,6 @@ export default defineBuildConfig({
     emitCJS: true,
   },
   externals: [
-    "vite",
-    "vite-plugin-vue2",
-    "vite-plugin-shadow-dom-css"
+    'minimist'
   ],
 })

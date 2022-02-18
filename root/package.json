@@ -1,25 +1,32 @@
 {
-  "name": "@examples/root",
+  "name": "root",
+  "private": true,
   "main": "src/index.js",
   "scripts": {
-    "dev": "web-dev-server --config scripts/web-dev-server.config.mjs",
-    "build": "rm -rf dist && rollup -c scripts/rollup.config.js && rollup -c scripts/rollup.config.html.js"
+    "dev": "npm run dev:link && npm run dev:importmap && npm run dev:server",
+    "dev:link": "rm -rf ./dist && ln -s ../dist ./",
+    "dev:importmap": "cross-env NODE_ENV=development node scripts/build.importmap.mjs",
+    "dev:server": "web-dev-server --config scripts/dev-server.config.mjs",
+    "build": "npm run build:js && npm run build:importmap && npm run build:html",
+    "build:js": "rollup -c scripts/rollup.config.js.mjs",
+    "build:importmap": "node scripts/build.importmap.mjs",
+    "build:html": "rollup -c scripts/rollup.config.html.mjs",
+    "preview:build": "web-dev-server --root-dir ../dist/ --app-index index.html --open /"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-replace": "^3.0.0",
     "@web/dev-server": "^0.1.29",
-    "@web/dev-server-import-maps": "^0.0.6",
     "@web/rollup-plugin-html": "^1.10.1",
     "rollup": "^2.67.2",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-hash": "^1.3.0"
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "systemjs": "^6.12.1",
     "@growing-web/web-router": "^0.0.1",
     "@web-widget/container": "^0.0.22",
     "@web-widget/system-loader": "^0.0.22",
-    "@examples/app": "workspace:*"
+    "@apps/index": "workspace:*"
   }
 }

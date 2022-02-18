@@ -18,9 +18,8 @@ export default () => ({
         <h3>2. 创建你的微应用</h3>
         <ul>
           <li>复制当前 package 上一级目录中的 example-* 目录（例如复制 example-vue 至 news），并且成功运行它</li>
-          <li>返回到 root-config 并使用你的项目名称更新导入映射 <code>importmap</code>（建议使用应用程序的 package.json 名称字段）</li>
-          <li>编辑 index.html <code>web-router</code> 并且添加你的应用程序名称</li>
-          <li>删除当前示例欢迎页面代码</li>
+          <li>返回到 root，将应用的包名添加到 package.json 的 dependencies 中，这样应用的修改将会自动触发根配置的构建</li>
+          <li>修改 site.cofnig.json，在 routes 中为你的应用设置路由</li>
           <li>重新启动开发服务器</li>
         </ul>
         <p>在此之后，你将看不到这个欢迎页面，而看到的是你刚创建的应用程序！</p>

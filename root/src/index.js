@@ -1,5 +1,3 @@
-import 'systemjs/dist/s.js';
-import 'systemjs/dist/extras/amd.js';
 import { HTMLWebWidgetElement, WebWidgetDependencies } from '@web-widget/container';
 import '@web-widget/system-loader';
 import '@growing-web/web-router';
@@ -27,16 +25,6 @@ function getRootAppData() {
   return null;
 };
 
-defineHook(HTMLWebWidgetElement.prototype, 'createRenderRoot', ({ value }) => ({ 
-  value() {
-    if (this.hasAttribute('noshadowroot')) {
-      return this;
-    }
-
-    return value.apply(this, arguments);
-  }
-}));
-
 defineHook(HTMLWebWidgetElement.prototype, 'createDependencies', ({ value }) => ({
   value() {
     const dependencies = value.apply(this, arguments);
@@ -62,3 +50,18 @@ defineHook(WebWidgetDependencies.prototype, 'data', ({ get }) => {
     }
   }
 });
+
+if (process.env.NODE_ENV === 'production') {
+  defineHook(HTMLWebWidgetElement.prototype, 'type', ({ get }) => ({
+    get() {
+      const type = this.ownerElement.getAttribute('type');
+
+      if (isRouterApp(this.ownerElement)) {
+        if (!type) {
+          return 'system';
+        };
+      }
+      return get.apply(this, arguments);
+    }
+  }));
+}
