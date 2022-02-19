@@ -9,6 +9,7 @@ export const JSONWriter = (file, data) =>
 export const normalizeBasename = name => name.replace('@', '');
 
 export const siteConfig = JSONReader(`${__dirname}/../site.config.json`);
+export const devSiteConfig = JSONReader(`${__dirname}/../site.config.dev.json`);
 export const baseBuildDistPath = normalize(`${__dirname}/../../dist/`);
 export const currentPackage = JSONReader(`${__dirname}/../package.json`);
 export const currentDistPathname = normalizeBasename(currentPackage.name);

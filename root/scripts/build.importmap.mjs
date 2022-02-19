@@ -1,3 +1,4 @@
+import path from 'path';
 import {
   baseBuildDistPath,
   currentPackage,
@@ -5,13 +6,20 @@ import {
   JSONWriter,
   normalizeBasename,
   siteConfig,
+  devSiteConfig
 } from './utils.mjs';
 
-const NODE_ENV = process.env.NODE_ENV;
-const importmapFilename = NODE_ENV === 'development' ? 'importmap.json' : 'systemjs-importmap.json';
+const isDevelopment =  process.env.NODE_ENV === 'development';
+const importmapFilename = isDevelopment ? 'importmap.json' : 'systemjs-importmap.json';
+const output = `${baseBuildDistPath}${importmapFilename}`;
+const publicPath = isDevelopment ? (devSiteConfig.publicPath || siteConfig.publicPath) : siteConfig.publicPath;
+
+function isAbsolutePath(path) {
+  return /^(\/|https?)/.test(path);
+}
 
 function toPublicPath(publicPath, name, path) {
-  if (/^(\/|https?)/.test(path)) {
+  if (isAbsolutePath(path)) {
     return path;
   }
   return `${publicPath}${normalizeBasename(name)}/${path}`;
@@ -48,7 +56,12 @@ function getImportmapValue(name, value) {
     );
     return importmap.imports[name];
   }
-  return value;
+  
+  if (isAbsolutePath(value)) {
+    return value;
+  }
+
+  throw new Error(`Cannot import: {"${name}": "${value}"}`);
 }
 
 function assignImportmap(target, source, publicPath) {
@@ -63,7 +76,16 @@ function assignImportmap(target, source, publicPath) {
 
 const importmap = assignImportmap({
   imports: {},
-}, siteConfig.importmap, siteConfig.publicPath);
+}, siteConfig.importmap, publicPath);
 
-JSONWriter(`${baseBuildDistPath}${importmapFilename}`, importmap);
-console.log(`created`, importmapFilename);
+if (isDevelopment && isDevelopment.importmap) {
+  const devImportmap = isDevelopment.importmap;
+  if (devImportmap && devImportmap.imports) {
+    Object.keys(devImportmap.imports).forEach(name => {
+      importmap.imports[name] = devImportmap.imports[name];
+    });
+  }
+}
+
+JSONWriter(output, importmap);
+console.log(`created`, path.relative(process.cwd(), output));

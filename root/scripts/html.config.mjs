@@ -4,11 +4,6 @@ export const developmentFragment = () => {
   const importmap = JSONReader(`${baseBuildDistPath}importmap.json`);
   return {
     get importmap() {
-      const devImportmap = JSONReader(`${process.cwd()}/modules-proxy.json`);
-      Object.keys(devImportmap.imports).forEach(name => {
-        importmap.imports[name] = devImportmap.imports[name];
-      });
-  
       return `
         <script type="importmap:original">${JSON.stringify(importmap)}</script>
         <script src="/src/importmap-override.js"></script>
