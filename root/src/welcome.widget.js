@@ -3,7 +3,7 @@ export default () => ({
     container.innerHTML = `
       <main>
         <h1>Welcome</h1>
-        <p>此页面根据你的根配置呈现。</p>
+        <p>警告：这个页面的信息过时了！</p>
         <h2>下一步</h2>
         <h3>1. 添加共享依赖</h3>
         <ul>

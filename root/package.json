@@ -4,11 +4,10 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "npm run dev:link && npm run dev:importmap && npm run dev:server",
-    "dev:link": "rm -rf ./dist && ln -s ../dist ./",
+    "dev:link": "rm -rf ./workspace && ln -s ../ ./workspace",
     "dev:importmap": "cross-env NODE_ENV=development node scripts/build.importmap.mjs",
     "dev:server": "web-dev-server --config scripts/dev-server.config.mjs",
-    "build": "npm run build:js && npm run build:importmap && npm run build:html",
-    "build:js": "rollup -c scripts/rollup.config.js.mjs",
+    "build": "npm run build:importmap && npm run build:html",
     "build:importmap": "node scripts/build.importmap.mjs",
     "build:html": "rollup -c scripts/rollup.config.html.mjs",
     "preview:build": "web-dev-server --root-dir ../dist/ --app-index index.html --open /"
@@ -18,15 +17,17 @@
     "@rollup/plugin-replace": "^3.0.0",
     "@web/dev-server": "^0.1.29",
     "@web/rollup-plugin-html": "^1.10.1",
+    "@web/dev-server-rollup": "^0.3.15",
     "rollup": "^2.67.2",
     "rollup-plugin-terser": "^7.0.2",
     "cross-env": "^7.0.3"
   },
   "dependencies": {
-    "systemjs": "^6.12.1",
+    "systemjs": "workspace:*",
     "@growing-web/web-router": "^0.0.1",
     "@web-widget/container": "^0.0.22",
     "@web-widget/system-loader": "^0.0.22",
+    "@growing-web/bootstrap": "workspace:*",
     "@apps/index": "workspace:*"
   }
 }

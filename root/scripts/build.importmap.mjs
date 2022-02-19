@@ -1,6 +1,5 @@
 import {
   baseBuildDistPath,
-  currentDistPath,
   currentPackage,
   JSONReader,
   JSONWriter,
@@ -9,59 +8,62 @@ import {
 } from './utils.mjs';
 
 const NODE_ENV = process.env.NODE_ENV;
-const entryManifest = JSONReader(`${currentDistPath}manifest.json`);
+const importmapFilename = NODE_ENV === 'development' ? 'importmap.json' : 'systemjs-importmap.json';
 
-const importmap = {
-  imports: {},
-};
+function toPublicPath(publicPath, name, path) {
+  if (/^(\/|https?)/.test(path)) {
+    return path;
+  }
+  return `${publicPath}${normalizeBasename(name)}/${path}`;
+}
 
-function dependenciesFilter(dependencies, rules) {
+function dependenciesFilter(dependencies, name) {
   const results = [];
-  rules.forEach((rule) => {
+
+  if (name.includes('*')) {
     const regx = new RegExp(
       '^' +
-      rule
+      name
         .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
         .replace(/\*/g, '.*') +
       '$'
     );
+  
     Object.keys(dependencies).forEach((name) => {
       if (regx.test(name)) {
         results.push(name);
       }
     });
-  });
+  } else {
+    results.push(name);
+  } 
+
   return results;
 }
 
-function getPublicPath(publicPath, name, path) {
-  return `${publicPath}${normalizeBasename(name)}/${path}`;
+function getImportmapValue(name, value) {
+  if (value.includes('workspace:*')) {
+    const importmap = JSONReader(
+      `${baseBuildDistPath}${normalizeBasename(name)}/${importmapFilename}`
+    );
+    return importmap.imports[name];
+  }
+  return value;
 }
 
-// 获取依赖的 Apps 入口模块映射
-dependenciesFilter(currentPackage.dependencies, siteConfig.applications)
-  .map((name) =>
-    JSONReader(
-      `${baseBuildDistPath}${normalizeBasename(name)}/web-widget.json`
-    )
-  )
-  .forEach(({ name, fallbackPath, path }) => {
-    importmap.imports[name] = getPublicPath(
-      siteConfig.publicPath,
-      name,
-      NODE_ENV === 'development' ? path : fallbackPath
-    );
+function assignImportmap(target, source, publicPath) {
+  Object.keys(source.imports).forEach(name => {
+    const value = source.imports[name];
+    dependenciesFilter(currentPackage.dependencies, name).forEach(name => {
+      target.imports[name] = toPublicPath(publicPath, name, getImportmapValue(name, value));
+    });
   });
+  return target;
+}
 
-// 共享依赖
-Object.assign(importmap.imports, siteConfig.sharedDependencies);
+const importmap = assignImportmap({
+  imports: {},
+}, siteConfig.importmap, siteConfig.publicPath);
 
-// 获取根入口文件模块映射
-importmap.imports[entryManifest.name] = getPublicPath(
-  siteConfig.publicPath,
-  entryManifest.name,
-  NODE_ENV === 'development' ? entryManifest.path : entryManifest.fallbackPath
-);
-
-JSONWriter(`${currentDistPath}importmap.json`, importmap);
-console.log(`created`, `importmap.json`);
+JSONWriter(`${baseBuildDistPath}${importmapFilename}`, importmap);
+console.log(`created`, importmapFilename);

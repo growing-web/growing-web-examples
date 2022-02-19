@@ -33,6 +33,27 @@ importers:
       vite-preset: link:../../packages/vite-preset
       vue-template-compiler: 2.6.14
 
+  packages/bootstrap:
+    specifiers:
+      '@growing-web/web-router': ^0.0.1
+      '@rollup/plugin-node-resolve': ^13.0.6
+      '@rollup/plugin-replace': ^3.0.0
+      '@web-widget/container': ^0.0.22
+      '@web-widget/system-loader': ^0.0.22
+      rollup: ^2.67.2
+      rollup-plugin-terser: ^7.0.2
+      systemjs: ^6.12.1
+    dependencies:
+      '@growing-web/web-router': 0.0.1
+      '@web-widget/container': 0.0.22
+      '@web-widget/system-loader': 0.0.22
+      systemjs: 6.12.1
+    devDependencies:
+      '@rollup/plugin-node-resolve': 13.1.3_rollup@2.67.2
+      '@rollup/plugin-replace': 3.1.0_rollup@2.67.2
+      rollup: 2.67.2
+      rollup-plugin-terser: 7.0.2_rollup@2.67.2
+
   packages/config:
     specifiers:
       eslint-config-next: ^12.0.8
@@ -40,6 +61,21 @@ importers:
     dependencies:
       eslint-config-next: 12.0.10
       eslint-config-prettier: 8.3.0
+
+  packages/systemjs:
+    specifiers:
+      '@rollup/plugin-node-resolve': ^13.0.6
+      '@rollup/plugin-replace': ^3.0.0
+      rollup: ^2.67.2
+      rollup-plugin-terser: ^7.0.2
+      systemjs: ^6.12.1
+    dependencies:
+      systemjs: 6.12.1
+    devDependencies:
+      '@rollup/plugin-node-resolve': 13.1.3_rollup@2.67.2
+      '@rollup/plugin-replace': 3.1.0_rollup@2.67.2
+      rollup: 2.67.2
+      rollup-plugin-terser: 7.0.2_rollup@2.67.2
 
   packages/tsconfig:
     specifiers: {}
@@ -67,27 +103,31 @@ importers:
   root:
     specifiers:
       '@apps/index': workspace:*
+      '@growing-web/bootstrap': workspace:*
       '@growing-web/web-router': ^0.0.1
       '@rollup/plugin-node-resolve': ^13.0.6
       '@rollup/plugin-replace': ^3.0.0
       '@web-widget/container': ^0.0.22
       '@web-widget/system-loader': ^0.0.22
       '@web/dev-server': ^0.1.29
+      '@web/dev-server-rollup': ^0.3.15
       '@web/rollup-plugin-html': ^1.10.1
       cross-env: ^7.0.3
       rollup: ^2.67.2
       rollup-plugin-terser: ^7.0.2
-      systemjs: ^6.12.1
+      systemjs: workspace:*
     dependencies:
       '@apps/index': link:../apps/index
+      '@growing-web/bootstrap': link:../packages/bootstrap
       '@growing-web/web-router': 0.0.1
       '@web-widget/container': 0.0.22
       '@web-widget/system-loader': 0.0.22
-      systemjs: 6.12.1
+      systemjs: link:../packages/systemjs
     devDependencies:
       '@rollup/plugin-node-resolve': 13.1.3_rollup@2.67.2
       '@rollup/plugin-replace': 3.1.0_rollup@2.67.2
       '@web/dev-server': 0.1.29
+      '@web/dev-server-rollup': 0.3.15
       '@web/rollup-plugin-html': 1.10.1
       cross-env: 7.0.3
       rollup: 2.67.2

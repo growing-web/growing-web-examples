@@ -13,7 +13,10 @@ export default {
     rollupPluginHTML({
       input: {
         name: 'index.html',
-        html: transformFragment(fs.readFileSync('./index.html', 'utf8'), productionFragment()),
+        get html() {
+          const html = transformFragment(fs.readFileSync('./index.html', 'utf8'), productionFragment());
+          return html;
+        },
       },
       publicPath: `${siteConfig.publicPath}${normalizeBasename(name)}/`,
       minify: true

@@ -7,47 +7,52 @@ import { currentDistPath, currentPackage } from './utils.mjs';
 const { name } = currentPackage;
 const filename = name.replace(/^@[^/]+\//, '').replace(/\//g, '-');
 
-const manifestPlugin = () => {
-  // Like Web Widget Manifest
-  const manifest = {
-    name
-  };
+const createImportmapPlugin = ({
+  name,
+  cache = () => ({
+    imports: {}
+  })
+}) => {
   return {
-    name: 'create-manifest',
+    name: 'create-importmap',
     generateBundle({ format }, bundle) {
+      const importmap = cache({ format });
+
       for (const file in bundle) {
         const chunk = bundle[file]
         if (chunk.type === 'chunk' && chunk.isEntry) {
-          if (format === 'es' || format === 'esm') {
-            manifest.path = chunk.fileName;
-          } else if (format === 'system') {
-            manifest.fallbackPath = chunk.fileName;
-          }
+          importmap.imports[name] = chunk.fileName;
         }
       }
 
-      this.emitFile({
-        fileName: 'manifest.json',
-        type: 'asset',
-        source: JSON.stringify(manifest, null, 2)
-      });
+      if (format === 'es' || format === 'esm' || format === 'iife') {
+        this.emitFile({
+          fileName: 'importmap.json',
+          type: 'asset',
+          source: JSON.stringify(importmap, null, 2)
+        });
+      }
+      
+      if (format === 'system' || format === 'iife' || 'umd') {
+        this.emitFile({
+          fileName: 'systemjs-importmap.json',
+          type: 'asset',
+          source: JSON.stringify(importmap, null, 2)
+        });
+      }
     }
   };
 };
 
-export default [{
-  input: 'src/system.js',
-  output: { dir: 'libs' },
-  plugins: [nodeResolve(),]
-}, {
+export default {
   input: 'src/index.js',
   output: [{
-    dir: currentDistPath,
     format: 'es',
+    dir: currentDistPath,
     entryFileNames: `${filename}.[hash].[format].js`
   }, {
-    dir: currentDistPath,
     format: 'system',
+    dir: currentDistPath,
     entryFileNames: `${filename}.[hash].[format].js`
   }],
   plugins: [
@@ -61,6 +66,8 @@ export default [{
         'process.env.NODE_ENV': JSON.stringify('production')
       }
     }),
-    manifestPlugin()
+    createImportmapPlugin({
+      name
+    })
   ],
-}];
+};

@@ -16,7 +16,7 @@ function isRouterApp (widget) {
 };
 
 function getRootAppData() {
-  const element = document.querySelector('script[type="application/pfd+json"]')
+  const element = document.querySelector('script[type="application/sd+json"]')
   if (element) {
     try {
       return JSON.parse(element.textContent);
@@ -25,18 +25,18 @@ function getRootAppData() {
   return null;
 };
 
-defineHook(HTMLWebWidgetElement.prototype, 'createDependencies', ({ value }) => ({
-  value() {
-    const dependencies = value.apply(this, arguments);
-    defineHook(dependencies, 'router', () => ({
-      get: () => this.router
-    }));
-    defineHook(dependencies, 'route', () => ({
-      get: () => this.route
-    }));
-    return dependencies;
-  }
-}));
+// defineHook(HTMLWebWidgetElement.prototype, 'createDependencies', ({ value }) => ({
+//   value() {
+//     const dependencies = value.apply(this, arguments);
+//     defineHook(dependencies, 'router', () => ({
+//       get: () => this.router
+//     }));
+//     defineHook(dependencies, 'route', () => ({
+//       get: () => this.route
+//     }));
+//     return dependencies;
+//   }
+// }));
 
 defineHook(WebWidgetDependencies.prototype, 'data', ({ get }) => {
   return {
@@ -50,18 +50,3 @@ defineHook(WebWidgetDependencies.prototype, 'data', ({ get }) => {
     }
   }
 });
-
-if (process.env.NODE_ENV === 'production') {
-  defineHook(HTMLWebWidgetElement.prototype, 'type', ({ get }) => ({
-    get() {
-      const type = this.ownerElement.getAttribute('type');
-
-      if (isRouterApp(this.ownerElement)) {
-        if (!type) {
-          return 'system';
-        };
-      }
-      return get.apply(this, arguments);
-    }
-  }));
-}
