@@ -11,7 +11,7 @@ export const developmentFragment = () => {
     },
     data: `<script type="application/sd+json">{}</script>`,
     get outlet() {
-      const routes = siteConfig.routes;
+      const routes = siteConfig.routemap.routes;
       return `
         <web-router>
           ${routes.map(({ path, element, properties }) => {
@@ -43,7 +43,7 @@ export const productionFragment = () => {
     },
     data: `<script type="application/sd+json">{}</script>`,
     get outlet() {
-      const routes = siteConfig.routes;
+      const routes = siteConfig.routemap.routes;
       return `
         <web-router>
           ${routes.map(({ path, element, properties }) => {

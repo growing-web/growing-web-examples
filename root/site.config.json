@@ -8,20 +8,22 @@
       "@apps/*": "workspace:*"
     }
   },
-  "routes": [
-    {
-      "path": "/",
-      "element": "web-widget",
-      "properties": {
-        "import": "@apps/index"
+  "routemap": {
+    "routes": [
+      {
+        "path": "/",
+        "element": "web-widget",
+        "properties": {
+          "import": "@apps/index"
+        }
+      },
+      {
+        "path": "*",
+        "element": "web-widget",
+        "properties": {
+          "import": "@apps/404"
+        }
       }
-    },
-    {
-      "path": "*",
-      "element": "web-widget",
-      "properties": {
-        "import": "@apps/404"
-      }
-    }
-  ]
+    ]
+  }
 }

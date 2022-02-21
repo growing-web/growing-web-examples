@@ -78,8 +78,8 @@ const importmap = assignImportmap({
   imports: {},
 }, siteConfig.importmap, publicPath);
 
-if (isDevelopment && isDevelopment.importmap) {
-  const devImportmap = isDevelopment.importmap;
+if (isDevelopment && devSiteConfig.importmap) {
+  const devImportmap = devSiteConfig.importmap;
   if (devImportmap && devImportmap.imports) {
     Object.keys(devImportmap.imports).forEach(name => {
       importmap.imports[name] = devImportmap.imports[name];
