@@ -10,6 +10,7 @@ export default defineBuildConfig({
   externals: [
     "vite",
     "vite-plugin-vue2",
+    "@vitejs/plugin-react",
     "vite-plugin-shadow-dom-css"
   ],
 })

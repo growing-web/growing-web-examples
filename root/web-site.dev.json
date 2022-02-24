@@ -3,8 +3,9 @@
     "imports": {
       "@growing-web/bootstrap": "/workspace/packages/bootstrap/src/index.js",
       "@apps/news": "workspace:*/src/index.js",
-      "@apps/index": "/src/welcome.widget.js",
-      "@apps/404": "/src/404.widget.js'"
+      "@apps/index": "http://localhost:3001/src/main.js",
+      "@apps/404": "/src/404.widget.js",
+      "@apps/vue-router-demo": "http://localhost:3002/src/index.js"
     }
   }
 }

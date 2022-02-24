@@ -18,6 +18,13 @@
         }
       },
       {
+        "path": "/vue-router-demo/*",
+        "element": "web-widget",
+        "properties": {
+          "import": "@apps/vue-router-demo"
+        }
+      },
+      {
         "path": "*",
         "element": "web-widget",
         "properties": {

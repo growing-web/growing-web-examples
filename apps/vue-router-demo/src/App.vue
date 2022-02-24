@@ -1,19 +1,16 @@
 <template>
-  <div class="index">
+	<div id="app">
     <Nav></Nav>
-    <Todolist></Todolist>
-  </div>
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
   import Nav from '@apps/nav/Nav.vue'
-  import Todolist from './Todolist.vue'
 	export default {
     name: 'app',
     components: {
-      Nav,
-      Todolist
+      Nav
     }
   }
 </script>
-

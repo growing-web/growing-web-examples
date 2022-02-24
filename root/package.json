@@ -28,6 +28,7 @@
     "@web-widget/container": "^0.0.22",
     "@web-widget/system-loader": "^0.0.22",
     "@growing-web/bootstrap": "workspace:*",
-    "@apps/index": "workspace:*"
+    "@apps/index": "workspace:*",
+    "@apps/vue-router-demo": "workspace:*"
   }
 }
