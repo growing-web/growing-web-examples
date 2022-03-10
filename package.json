@@ -23,5 +23,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@6.31.0"
+  "packageManager": "pnpm@6.31.0",
+  "dependencies": {
+    "@growing-web/web-builder": "^0.0.1-beta.1"
+  }
 }

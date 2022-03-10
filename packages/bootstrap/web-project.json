@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifests": ["exports-manifest"],
+  "entries": [
+    {
+      "input": "src/index.js",
+      "output": {
+        "dir": "${workspaceRoot}/dist/growing-web/bootstrap",
+        "formats": ["esm", "system"],
+        "entryFileNames": "[name]-[hash]-[format].js"
+      }
+    }
+  ]
+}

@@ -1,14 +1,7 @@
 {
   "name": "systemjs",
-  "private": true,
   "scripts": {
-    "build": "rollup -c scripts/rollup.config.js.mjs"
-  },
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.6",
-    "@rollup/plugin-replace": "^3.0.0",
-    "rollup": "^2.67.2",
-    "rollup-plugin-terser": "^7.0.2"
+    "build": "pnpm web-builder build --no-clean"
   },
   "dependencies": {
     "systemjs": "^6.12.1"

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifests": ["exports-manifest"],
+  "entries": [
+    {
+      "input": "src/main.js",
+      "output": {
+        "dir": "${workspaceRoot}/dist/apps/index",
+        "formats": ["esm", "system"],
+        "entryFileNames": "[name]-[hash]-[format].js",
+        "externals": ["vue"],
+        "globals": {
+          "vue": "Vue"
+        }
+      }
+    }
+  ],
+  "server": {
+    "port": 6060
+  }
+}

@@ -1,8 +1,8 @@
 export default () => ({
   mount({ container }) {
-    container.innerHTML = '404';
+    container.innerHTML = '404'
   },
   unmount({ container }) {
-    container.innerHTML = '';
-  }
-});
+    container.innerHTML = ''
+  },
+})
