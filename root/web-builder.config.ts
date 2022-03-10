@@ -6,27 +6,28 @@ const siteConfig = fs.readJSONSync(path.resolve(__dirname, 'web-site.json'))
 
 export default function ({ mode }: UserConfigExport): UserConfig {
   const isDev = mode === 'development'
-  const importmap = fs.readJSONSync(
-    path.resolve(
+
+  function getFragment() {
+    const manifestPath = path.resolve(
       __dirname,
       '../dist/',
       `${isDev ? 'exports-manifest.json' : 'system-exports-manifest.json'}`,
-    ),
-  )
+    )
+    const importmap = fs.readJSONSync(manifestPath)
 
-  const routes = siteConfig.routemap.routes
-  const bootstrap = importmap.imports['@growing-web/bootstrap']
-  const systemjs = importmap.imports.systemjs
+    const routes = siteConfig.routemap.routes
+    const bootstrap = importmap.imports['@growing-web/bootstrap']
+    const systemjs = importmap.imports.systemjs
 
-  // TODO 确定不需要system 时候简化
-  const fragmentData = {
-    importmap: `<script type="${
-      isDev ? 'importmap' : 'systemjs-importmap'
-    }">${JSON.stringify(importmap)}</script>`,
+    // TODO 确定不需要system 时候简化
+    return {
+      importmap: `<script type="${
+        isDev ? 'importmap' : 'systemjs-importmap'
+      }">${JSON.stringify(importmap)}</script>`,
 
-    data: `<script type="application/sd+json">{}</script>`,
+      data: `<script type="application/sd+json">{}</script>`,
 
-    outlet: `
+      outlet: `
         <web-router>
           ${routes
             .map(({ path, element, properties }) => {
@@ -44,9 +45,9 @@ export default function ({ mode }: UserConfigExport): UserConfig {
         </web-router>
       `,
 
-    entry: isDev
-      ? `<script type="module" src="${bootstrap}"></script>`
-      : `
+      entry: isDev
+        ? `<script type="module" src="${bootstrap}"></script>`
+        : `
         <template>
           <script src="${systemjs}"></script>
           <link rel="preload" as="script" href="${bootstrap}">
@@ -60,6 +61,7 @@ export default function ({ mode }: UserConfigExport): UserConfig {
           })();
         </script>
       `,
+    }
   }
 
   return {
@@ -85,7 +87,7 @@ export default function ({ mode }: UserConfigExport): UserConfig {
             name: 'transformFragment',
             transform(code, id) {
               if (id.endsWith('.html')) {
-                const html = transformFragment(code, fragmentData)
+                const html = transformFragment(code, getFragment())
                 return html
               }
               return null
@@ -98,7 +100,10 @@ export default function ({ mode }: UserConfigExport): UserConfig {
             webDevServer: {
               transform(context) {
                 if (context.response.is('html')) {
-                  return transformFragment(context.body as string, fragmentData)
+                  return transformFragment(
+                    context.body as string,
+                    getFragment(),
+                  )
                 }
               },
             },

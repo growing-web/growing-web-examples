@@ -17,14 +17,12 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "@growing-web/web-builder": "^0.0.2-beta.1"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@6.31.0",
-  "dependencies": {
-    "@growing-web/web-builder": "^0.0.1-beta.1"
-  }
+  "packageManager": "pnpm@6.31.0"
 }

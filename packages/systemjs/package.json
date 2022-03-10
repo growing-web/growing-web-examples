@@ -4,6 +4,6 @@
     "build": "pnpm web-builder build --no-clean"
   },
   "dependencies": {
-    "systemjs": "^6.12.1"
+    "system.js": "npm:systemjs@6.12.1"
   }
 }

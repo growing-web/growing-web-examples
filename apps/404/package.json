@@ -7,6 +7,6 @@
     "build": "pnpm web-builder build --no-clean"
   },
   "devDependencies": {
-    "@web-widget/container": "^0.0.12"
+    "@web-widget/container": "^0.0.23"
   }
 }

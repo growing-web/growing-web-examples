@@ -3,21 +3,22 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "dev": "web-builder dev",
-    "build": "web-builder build --no-clean"
+    "dev": "pnpm web-builder dev",
+    "build": "pnpm web-builder build --no-clean"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
     "fs-extra": "^10.0.1"
   },
   "dependencies": {
-    "@apps/index": "workspace:*",
     "@apps/404": "workspace:*",
+    "@apps/index": "workspace:*",
+    "@apps/react-demo": "workspace:*",
     "@apps/vue-router-demo": "workspace:*",
     "@growing-web/bootstrap": "workspace:*",
-    "@growing-web/web-router": "^0.0.1",
-    "@web-widget/container": "^0.0.22",
-    "@web-widget/system-loader": "^0.0.22",
+    "@growing-web/web-router": "^0.0.2",
+    "@web-widget/container": "^0.0.23",
+    "@web-widget/system-loader": "^0.0.23",
     "systemjs": "workspace:*"
   }
 }

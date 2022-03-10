@@ -10,9 +10,9 @@
     "@apps/nav": "workspace:*",
     "vue": "^2.6.12",
     "vue-router": "3.0.1",
-    "vuejs-dialog": "0.9.0"
+    "vuejs-dialog": "1.4.2"
   },
   "devDependencies": {
-    "@web-widget/container": "^0.0.12"
+    "@web-widget/container": "^0.0.23"
   }
 }
