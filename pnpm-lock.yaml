@@ -4,11 +4,11 @@ importers:
 
   .:
     specifiers:
-      '@growing-web/web-builder': ^0.0.2-beta.1
+      '@growing-web/web-builder': ^0.0.2-beta.3
       prettier: ^2.5.1
       turbo: latest
     devDependencies:
-      '@growing-web/web-builder': 0.0.2-beta.1
+      '@growing-web/web-builder': 0.0.2-beta.3
       prettier: 2.5.1
       turbo: 1.1.6
 
@@ -512,13 +512,13 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@growing-web/web-builder-bundler-dev-server/0.0.2-beta.1:
-    resolution: {integrity: sha512-utYC13rmRqD6R6RidGKoAFsPoO59OBCU5mAfxP5IXQ4r2KIrihLBeTjfWneJxFTjosImVXarR2QttRg7TUsYmA==}
+  /@growing-web/web-builder-bundler-dev-server/0.0.2-beta.3:
+    resolution: {integrity: sha512-XslL55xStlnM2bQRLhXilKsXDPr2/HWtcXk4hQGs0aOavQ7YRUGehJZU2rl7gF244uuj+4p7Z2q5LHptm4TCsQ==}
     dependencies:
-      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.1_rollup@2.70.0
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1_rollup@2.70.0
-      '@growing-web/web-builder-types': 0.0.2-beta.1_rollup@2.70.0
+      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.3_rollup@2.70.0
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3_rollup@2.70.0
+      '@growing-web/web-builder-types': 0.0.2-beta.3_rollup@2.70.0
       '@rollup/plugin-replace': 4.0.0_rollup@2.70.0
       '@web/dev-server': 0.1.30
       '@web/dev-server-rollup': 0.3.15
@@ -543,12 +543,12 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-bundler-vite/0.0.2-beta.1:
-    resolution: {integrity: sha512-p2jwonS/QlsZbfERDL6feW09RIe3E+d7tLfymwRxZjQtTvjimkUm9lOMaw9hjyziVmRaptVpjyfPSpyj9xQg6g==}
+  /@growing-web/web-builder-bundler-vite/0.0.2-beta.3:
+    resolution: {integrity: sha512-/NAsC9Un68uiYNdc5tDYqsBbR/CzPtjJv8vKl5EgxV0LLyeB12xfpsQ3Q2LqnG+XHpqXeKbBQo4Ni0WoPS2Dbw==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1_esbuild@0.14.25
-      '@growing-web/web-builder-types': 0.0.2-beta.1_esbuild@0.14.25+vite@2.8.6
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3_esbuild@0.14.25
+      '@growing-web/web-builder-types': 0.0.2-beta.3_esbuild@0.14.25+vite@2.8.6
       '@preact/preset-vite': 2.1.7_vite@2.8.6
       '@vitejs/plugin-react': 1.2.0
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6
@@ -576,12 +576,12 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-bundler-vite/0.0.2-beta.1_rollup@2.70.0:
-    resolution: {integrity: sha512-p2jwonS/QlsZbfERDL6feW09RIe3E+d7tLfymwRxZjQtTvjimkUm9lOMaw9hjyziVmRaptVpjyfPSpyj9xQg6g==}
+  /@growing-web/web-builder-bundler-vite/0.0.2-beta.3_rollup@2.70.0:
+    resolution: {integrity: sha512-/NAsC9Un68uiYNdc5tDYqsBbR/CzPtjJv8vKl5EgxV0LLyeB12xfpsQ3Q2LqnG+XHpqXeKbBQo4Ni0WoPS2Dbw==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1_esbuild@0.14.25+rollup@2.70.0
-      '@growing-web/web-builder-types': 0.0.2-beta.1_9df4ede366a17b4d79a18d54b9029675
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3_esbuild@0.14.25+rollup@2.70.0
+      '@growing-web/web-builder-types': 0.0.2-beta.3_9df4ede366a17b4d79a18d54b9029675
       '@preact/preset-vite': 2.1.7_vite@2.8.6
       '@vitejs/plugin-react': 1.2.0
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6
@@ -609,16 +609,16 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-bundler-webpack/0.0.2-beta.1:
-    resolution: {integrity: sha512-121JRCjVYFJ/kg9Tjcb3zdvGBXAUoHP2TuJUbVwZi8n5R5ecxe3QpFKFk1fsJ3hW9jLe2bi9AKSLd4y6MGMRdA==}
+  /@growing-web/web-builder-bundler-webpack/0.0.2-beta.3:
+    resolution: {integrity: sha512-N2DZmzMoHYd8BHdrNAXeXZm3I0T5I+F9ZnzD87thAZMCzf1vnI1td81sR+LT/2pA5mLvojqeYS7+zkmhTVmqEQ==}
     dev: true
 
-  /@growing-web/web-builder-config/0.0.2-beta.1:
-    resolution: {integrity: sha512-ms+IaGVi26oGBCzk28q0tjpOSte3Zm9At7BGgfJuNxLWKv/zCH5zoEke4u6rGivJXTBJWgkCzEW2lTL3y/KQ5w==}
+  /@growing-web/web-builder-config/0.0.2-beta.3:
+    resolution: {integrity: sha512-YSqXbTurlduR7PNMRfcSpLGftGU3XOl9Ojh/VPgl5OBaeH0EW7Zyn3X7ax7Daq1xtXQRMTeUqP4Evc8k7577vQ==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1_esbuild@0.14.25+webpack@5.70.0
-      '@growing-web/web-builder-types': 0.0.2-beta.1_esbuild@0.14.25
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3_esbuild@0.14.25+webpack@5.70.0
+      '@growing-web/web-builder-types': 0.0.2-beta.3_esbuild@0.14.25
       '@web/dev-server-rollup': 0.3.15
       bundle-require: 3.0.4_esbuild@0.14.25
       esbuild: 0.14.25
@@ -639,21 +639,21 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-constants/0.0.2-beta.1:
-    resolution: {integrity: sha512-dF2BpiwQzHN8CgjAvpblOIPAGnBlWL2+1XZrSpROq/bWK3Wh5QP83IoPfvCOiVfnUFPzQg/e2vFyvkm14tWT2w==}
+  /@growing-web/web-builder-constants/0.0.2-beta.3:
+    resolution: {integrity: sha512-ruYtWTctus6gvaDYF53OISm6wv3/4VMCU5KvQCRmhZeNXar9gB+/EC87x8csTpNGNnJLspGCc1KEyhaQLHFnDw==}
     dev: true
 
-  /@growing-web/web-builder-core/0.0.2-beta.1:
-    resolution: {integrity: sha512-yj8jJBR31A1hFQA20tdPpZ0wsES0mNM4ICPhFuZXgqMwRLys+XYlpWQz406msyF8u93E8uC8ngw/kwVPHYZBiA==}
+  /@growing-web/web-builder-core/0.0.2-beta.3:
+    resolution: {integrity: sha512-ECazcSlqk5wAnAQ93YC3LUJOjzjfe8lr9Omb3K139AesmeiT4a+xYThR3/1vfXlnFCLPCzh1Vy+RB/H3amgt8Q==}
     engines: {node: ^14.16.0 || ^16.11.0 || >=17.0.0}
     dependencies:
-      '@growing-web/web-builder-bundler-dev-server': 0.0.2-beta.1
-      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.1
-      '@growing-web/web-builder-bundler-webpack': 0.0.2-beta.1
-      '@growing-web/web-builder-config': 0.0.2-beta.1
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1
+      '@growing-web/web-builder-bundler-dev-server': 0.0.2-beta.3
+      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.3
+      '@growing-web/web-builder-bundler-webpack': 0.0.2-beta.3
+      '@growing-web/web-builder-config': 0.0.2-beta.3
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3
       hookable: 5.1.1
     transitivePeerDependencies:
       - '@babel/core'
@@ -676,11 +676,11 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.0.2-beta.1:
-    resolution: {integrity: sha512-umoPz8GjMPrF5wL9PpikQfV9i8gwUy7loc7rTQKi0bIHDLa/JkMxxrWOLWMAyjs6PM8I0hmtNsWNBQ9CrIpVpg==}
+  /@growing-web/web-builder-kit/0.0.2-beta.3:
+    resolution: {integrity: sha512-fYGE+owUOPZw/Hgv0z1WIAuV1TJI7VyxOTcDVM6qvCq9TCYD1lh0QDB3ST7XL4wex5xy5ponLO+atrx4AVm32A==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1_vite@2.8.6
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3_vite@2.8.6
       clear: 0.1.0
       cmd-shim: 4.1.0
       consola: 2.15.3
@@ -714,11 +714,11 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.0.2-beta.1_esbuild@0.14.25:
-    resolution: {integrity: sha512-umoPz8GjMPrF5wL9PpikQfV9i8gwUy7loc7rTQKi0bIHDLa/JkMxxrWOLWMAyjs6PM8I0hmtNsWNBQ9CrIpVpg==}
+  /@growing-web/web-builder-kit/0.0.2-beta.3_esbuild@0.14.25:
+    resolution: {integrity: sha512-fYGE+owUOPZw/Hgv0z1WIAuV1TJI7VyxOTcDVM6qvCq9TCYD1lh0QDB3ST7XL4wex5xy5ponLO+atrx4AVm32A==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1_esbuild@0.14.25+vite@2.8.6
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3_esbuild@0.14.25+vite@2.8.6
       clear: 0.1.0
       cmd-shim: 4.1.0
       consola: 2.15.3
@@ -752,11 +752,11 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.0.2-beta.1_esbuild@0.14.25+rollup@2.70.0:
-    resolution: {integrity: sha512-umoPz8GjMPrF5wL9PpikQfV9i8gwUy7loc7rTQKi0bIHDLa/JkMxxrWOLWMAyjs6PM8I0hmtNsWNBQ9CrIpVpg==}
+  /@growing-web/web-builder-kit/0.0.2-beta.3_esbuild@0.14.25+rollup@2.70.0:
+    resolution: {integrity: sha512-fYGE+owUOPZw/Hgv0z1WIAuV1TJI7VyxOTcDVM6qvCq9TCYD1lh0QDB3ST7XL4wex5xy5ponLO+atrx4AVm32A==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1_9df4ede366a17b4d79a18d54b9029675
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3_9df4ede366a17b4d79a18d54b9029675
       clear: 0.1.0
       cmd-shim: 4.1.0
       consola: 2.15.3
@@ -790,11 +790,11 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.0.2-beta.1_esbuild@0.14.25+webpack@5.70.0:
-    resolution: {integrity: sha512-umoPz8GjMPrF5wL9PpikQfV9i8gwUy7loc7rTQKi0bIHDLa/JkMxxrWOLWMAyjs6PM8I0hmtNsWNBQ9CrIpVpg==}
+  /@growing-web/web-builder-kit/0.0.2-beta.3_esbuild@0.14.25+webpack@5.70.0:
+    resolution: {integrity: sha512-fYGE+owUOPZw/Hgv0z1WIAuV1TJI7VyxOTcDVM6qvCq9TCYD1lh0QDB3ST7XL4wex5xy5ponLO+atrx4AVm32A==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1_esbuild@0.14.25+vite@2.8.6
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3_esbuild@0.14.25+vite@2.8.6
       clear: 0.1.0
       cmd-shim: 4.1.0
       consola: 2.15.3
@@ -828,11 +828,11 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.0.2-beta.1_rollup@2.70.0:
-    resolution: {integrity: sha512-umoPz8GjMPrF5wL9PpikQfV9i8gwUy7loc7rTQKi0bIHDLa/JkMxxrWOLWMAyjs6PM8I0hmtNsWNBQ9CrIpVpg==}
+  /@growing-web/web-builder-kit/0.0.2-beta.3_rollup@2.70.0:
+    resolution: {integrity: sha512-fYGE+owUOPZw/Hgv0z1WIAuV1TJI7VyxOTcDVM6qvCq9TCYD1lh0QDB3ST7XL4wex5xy5ponLO+atrx4AVm32A==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1_rollup@2.70.0+vite@2.8.6
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3_rollup@2.70.0+vite@2.8.6
       clear: 0.1.0
       cmd-shim: 4.1.0
       consola: 2.15.3
@@ -866,10 +866,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_webpack@5.70.0
@@ -883,10 +883,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_9df4ede366a17b4d79a18d54b9029675:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_9df4ede366a17b4d79a18d54b9029675:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_4323e75a58c833b05efc364696fcdde4
@@ -900,10 +900,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_esbuild@0.14.25:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_esbuild@0.14.25:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_esbuild@0.14.25+webpack@5.70.0
@@ -917,10 +917,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_esbuild@0.14.25+vite@2.8.6:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_esbuild@0.14.25+vite@2.8.6:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_d57423be55c8d1b21d4516217c7be3d4
@@ -934,10 +934,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_rollup@2.70.0:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_rollup@2.70.0:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_rollup@2.70.0+webpack@5.70.0
@@ -951,10 +951,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_rollup@2.70.0+vite@2.8.6:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_rollup@2.70.0+vite@2.8.6:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_03288d982730321210b6eedb5467d075
@@ -968,10 +968,10 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-types/0.0.2-beta.1_vite@2.8.6:
-    resolution: {integrity: sha512-1D3wDOVfLvHO0TgsZoY41K8WEvr5KoFrzPy00TdpBz24PxRKLiF+i9qqHtytjh/1wEHHJfRFzT0Sna+COnMzrQ==}
+  /@growing-web/web-builder-types/0.0.2-beta.3_vite@2.8.6:
+    resolution: {integrity: sha512-GEBx7RzOWYWSlatrh5jpKqU+qRI8khY3zTXpPxNRjJZKimzfoCHgrfDCLIJy3Hq2kmOc/21oEqVIBEvwJe9xCA==}
     dependencies:
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
       consola: 2.15.3
       hookable: 5.1.1
       unplugin: 0.4.0_vite@2.8.6+webpack@5.70.0
@@ -985,17 +985,17 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder/0.0.2-beta.1:
-    resolution: {integrity: sha512-RGgrjhoFhRC3zPLghrIprYgnm6hWCDsT3OeHTS65ybEzQhO8CkxG+5BYrbNU5shfuwZAGhwbn1tcKFrZ82ECVQ==}
+  /@growing-web/web-builder/0.0.2-beta.3:
+    resolution: {integrity: sha512-eiGtlhCslQI+hDs611CskAIg4Cl28E+xYAux/bfkyoiZ4omjGqNu8xefEgH5lJwpS3JER+EEql1NJVJ56oGAYg==}
     engines: {node: ^14.16.0 || ^16.11.0 || >=17.0.0}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.1
-      '@growing-web/web-builder-constants': 0.0.2-beta.1
-      '@growing-web/web-builder-core': 0.0.2-beta.1
-      '@growing-web/web-builder-kit': 0.0.2-beta.1
-      '@growing-web/web-builder-types': 0.0.2-beta.1
+      '@growing-web/web-builder-bundler-vite': 0.0.2-beta.3
+      '@growing-web/web-builder-constants': 0.0.2-beta.3
+      '@growing-web/web-builder-core': 0.0.2-beta.3
+      '@growing-web/web-builder-kit': 0.0.2-beta.3
+      '@growing-web/web-builder-types': 0.0.2-beta.3
       cac: 6.7.12
       figlet: 1.5.2
       v8-compile-cache: 2.3.0
@@ -1976,7 +1976,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001314
-      electron-to-chromium: 1.4.80
+      electron-to-chromium: 1.4.81
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
@@ -2371,8 +2371,8 @@ packages:
     resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
     dev: true
 
-  /electron-to-chromium/1.4.80:
-    resolution: {integrity: sha512-COsbJCGVYCc/aAY4cd94x1Js3q0r406YKGbdL8LXHg0O9dEjuFEFU/vZneRxBxKo/f1lLHi0YyAR7sbFM+i8Bg==}
+  /electron-to-chromium/1.4.81:
+    resolution: {integrity: sha512-Gs7xVpIZ7tYYSDA+WgpzwpPvfGwUk3KSIjJ0akuj5XQHFdyQnsUoM76EA4CIHXNLPiVwTwOFay9RMb0ChG3OBw==}
     dev: true
 
   /emoji-regex/8.0.0:
