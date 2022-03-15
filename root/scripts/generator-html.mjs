@@ -31,7 +31,8 @@ const html = transformFragment(template, {
     `;
   },
   get entry() {
-    const { entry } = JSONReader('./webmodules.json'); 
+    //const { entry } = JSONReader('./webmodules.json');
+    const entry = '@growing-web/bootstrap';
     return `<script type="module">import ${JSON.stringify(entry)}</script>`;
   }
 });
