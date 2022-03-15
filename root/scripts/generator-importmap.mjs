@@ -61,7 +61,7 @@ const generator = new Generator({
   customProviders: {
     dancf,
   },
-  env: [isDevelopment ? "production" : "development", "browser", "module"],
+  env: [(isDevelopment ? "production" : "development"), "browser", "module"],
   defaultProvider,
   inputMap,
   resolutions: normalizeResolutions(Object.assign({}, currentPackage.dependencies, resolutions)),

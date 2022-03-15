@@ -4,14 +4,7 @@
       "path": "/",
       "element": "web-widget",
       "properties": {
-        "import": "@growing-web-examples/index"
-      }
-    },
-    {
-      "path": "/vue-router-demo/*",
-      "element": "web-widget",
-      "properties": {
-        "import": "@growing-web-examples/vue-router-demo"
+        "import": "@growing-web-examples/home-app"
       }
     },
     {

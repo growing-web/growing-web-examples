@@ -3,14 +3,15 @@
   "schemaVersion": "1.0.0",
   "entries": [
     {
-      "publicPath": "https://cdn.example.com/base/",
-      "input": "index.html",
+      "input": "src/main.js",
       "output": {
-        "dir": "../dist"
+        "dir": "dist",
+        "formats": ["esm"],
+        "entryFileNames": "[name].js"
       }
     }
   ],
   "server": {
-    "port": 9998
+    "port": 6050
   }
 }

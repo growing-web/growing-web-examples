@@ -18,20 +18,16 @@ importers:
     devDependencies:
       '@web-widget/container': 0.0.23
 
-  apps/index:
+  apps/home-app:
     specifiers:
       '@web-widget/container': ^0.0.23
       nav: workspace:*
-      vue: ^2.6.12
-      vue-template-compiler: ^2.6.12
     dependencies:
       nav: link:../../packages/nav
-      vue: 2.6.14
     devDependencies:
       '@web-widget/container': 0.0.23
-      vue-template-compiler: 2.6.14
 
-  apps/react-demo:
+  apps/react-app:
     specifiers:
       '@web-widget/container': ^0.0.23
       nav: workspace:*
@@ -44,7 +40,7 @@ importers:
     devDependencies:
       '@web-widget/container': 0.0.23
 
-  apps/vue-router-demo:
+  apps/vue-router-app:
     specifiers:
       '@web-widget/container': ^0.0.23
       nav: workspace:*
@@ -59,15 +55,26 @@ importers:
     devDependencies:
       '@web-widget/container': 0.0.23
 
+  apps/vue2-app:
+    specifiers:
+      '@web-widget/container': ^0.0.23
+      nav: workspace:*
+      vue: ^2.6.12
+      vue-template-compiler: ^2.6.12
+    dependencies:
+      nav: link:../../packages/nav
+      vue: 2.6.14
+    devDependencies:
+      '@web-widget/container': 0.0.23
+      vue-template-compiler: 2.6.14
+
   packages/bootstrap:
     specifiers:
       '@growing-web/web-router': ^0.0.2
-      '@web-widget/container': ^0.0.23
-      '@web-widget/system-loader': ^0.0.23
+      '@web-widget/container': ^0.0.24
     dependencies:
       '@growing-web/web-router': 0.0.2
-      '@web-widget/container': 0.0.23
-      '@web-widget/system-loader': 0.0.23
+      '@web-widget/container': 0.0.24
 
   packages/dancf-provider:
     specifiers:
@@ -122,9 +129,7 @@ importers:
   root:
     specifiers:
       '@growing-web-examples/404': workspace:*
-      '@growing-web-examples/index': workspace:*
-      '@growing-web-examples/react-demo': workspace:*
-      '@growing-web-examples/vue-router-demo': workspace:*
+      '@growing-web-examples/home-app': workspace:*
       '@growing-web/bootstrap': workspace:*
       '@growing-web/dancf-provider': workspace:*
       '@jspm/generator': ^1.0.0-beta.26
@@ -133,9 +138,7 @@ importers:
       lodash.merge: ^4.6.2
     dependencies:
       '@growing-web-examples/404': link:../apps/404
-      '@growing-web-examples/index': link:../apps/index
-      '@growing-web-examples/react-demo': link:../apps/react-demo
-      '@growing-web-examples/vue-router-demo': link:../apps/vue-router-demo
+      '@growing-web-examples/home-app': link:../apps/home-app
       '@growing-web/bootstrap': link:../packages/bootstrap
     devDependencies:
       '@growing-web/dancf-provider': link:../packages/dancf-provider
@@ -1867,9 +1870,10 @@ packages:
 
   /@web-widget/container/0.0.23:
     resolution: {integrity: sha512-zjHppzJzqvLPl2qY/U3wfm4sClZneQdEV9dmQ9KHYM2OR9MzoRp2nZQlyEEdzhc5KW/rdMdb4lqDwkGo/zEPGA==}
+    dev: true
 
-  /@web-widget/system-loader/0.0.23:
-    resolution: {integrity: sha512-P5pxQd4e0PV+Jz4fYq+1CtGmzFXWkXlHmcbj5dKt/RVUhdWIeEMgB4oNj1z8j41lH9FQnL25BN8uWx7cFrDabg==}
+  /@web-widget/container/0.0.24:
+    resolution: {integrity: sha512-fBCm1p3WB04i7HNMVp+we0TCBqCI16dzjqLs/vqgOFQUh5bt1feQKJ7BvcNgGJt6GCjpym81RawjG1UaWwyF8A==}
     dev: false
 
   /@web/config-loader/0.1.3:

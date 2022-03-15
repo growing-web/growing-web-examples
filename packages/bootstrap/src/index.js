@@ -1,5 +1,4 @@
 import { HTMLWebWidgetElement, WebWidgetDependencies } from '@web-widget/container';
-import '@web-widget/system-loader';
 import '@growing-web/web-router';
 
 function defineHook(target, name, callback) {
