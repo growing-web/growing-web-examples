@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/@growing-web/web-builder-config@latest/web-project-schema.json",
+  "schemaVersion": "1.0.0",
+  "entries": [
+    {
+      "publicPath": "https://cdn.example.com/base/",
+      "input": "index.html",
+      "output": {
+        "dir": "../dist"
+      }
+    }
+  ],
+  "server": {
+    "port": 9998
+  }
+}

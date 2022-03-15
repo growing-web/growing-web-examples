@@ -1,24 +1,20 @@
 {
   "name": "@apps/index",
   "version": "0.0.0",
-  "private": true,
   "main": "src/main.js",
   "scripts": {
-    "dev": "vite --port 3001",
-    "build": "vite build"
+    "dev": "pnpm web-builder dev",
+    "build": "pnpm web-builder build --no-clean"
   },
   "dependencies": {
-    "vue": "^2.6.12",
-    "@apps/nav": "workspace:*"
+    "@apps/nav": "workspace:*",
+    "vue": "^2.6.12"
   },
   "peerDependencies": {
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "config": "workspace:*",
-    "@web-widget/container": "^0.0.12",
-    "vite": "^2.8.4",
-    "vite-preset": "workspace:*"
+    "@web-widget/container": "^0.0.23",
+    "vue-template-compiler": "^2.6.12"
   }
 }

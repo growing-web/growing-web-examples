@@ -1,16 +1,14 @@
 {
-  "name": "@apps/vue-router-demo",
+  "name": "@apps/react-demo",
   "version": "0.0.0",
-  "main": "src/index.js",
+  "main": "src/main.jsx",
   "scripts": {
     "dev": "pnpm web-builder dev",
     "build": "pnpm web-builder build --no-clean"
   },
   "dependencies": {
-    "@apps/nav": "workspace:*",
-    "vue": "^2.6.12",
-    "vue-router": "3.0.1",
-    "vuejs-dialog": "1.4.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@web-widget/container": "^0.0.23"

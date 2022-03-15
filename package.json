@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "@growing-web/web-builder": "^0.0.2-beta.3"
   },
   "engines": {
     "npm": ">=7.0.0",

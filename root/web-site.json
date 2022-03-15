@@ -2,9 +2,9 @@
   "publicPath": "https://cdn.example.com/base/",
   "importmap": {
     "imports": {
+      "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js",
       "systemjs": "workspace:*",
       "@growing-web/bootstrap": "workspace:*",
-      "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js",
       "@apps/*": "workspace:*"
     }
   },
