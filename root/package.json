@@ -1,24 +1,33 @@
 {
-  "name": "root",
-  "private": true,
-  "main": "src/index.js",
-  "scripts": {
-    "dev": "pnpm web-builder dev",
-    "build": "pnpm web-builder build --no-clean"
+  "name": "@growing-web-examples/root",
+  "version": "0.0.1",
+  "description": "",
+  "exports": {
+    "./index.html": "./index.html",
+    "./importmap.json": "./importmap.json",
+    "./routemap.json": "./routemap.json"
   },
+  "scripts": {
+    "dev": "export NODE_ENV=development && npm run build && npm run dev:serve",
+    "build": "npm run generator-importmap && npm run generator-html",
+    "generator-importmap": "node scripts/generator-importmap.mjs",
+    "generator-html": "node scripts/generator-html.mjs",
+    "dev:serve": "web-dev-server --app-index index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "@types/fs-extra": "^9.0.13",
-    "fs-extra": "^10.0.1"
+    "@jspm/generator": "^1.0.0-beta.26",
+    "@web/dev-server": "^0.1.30",
+    "@growing-web/dancf-provider": "workspace:*",
+    "html-minifier-terser": "^7.0.0-alpha.2",
+    "lodash.merge": "^4.6.2"
   },
   "dependencies": {
-    "@apps/404": "workspace:*",
-    "@apps/index": "workspace:*",
-    "@apps/react-demo": "workspace:*",
-    "@apps/vue-router-demo": "workspace:*",
     "@growing-web/bootstrap": "workspace:*",
-    "@growing-web/web-router": "^0.0.2",
-    "@web-widget/container": "^0.0.23",
-    "@web-widget/system-loader": "^0.0.23",
-    "systemjs": "workspace:*"
+    "@growing-web-examples/404": "workspace:*",
+    "@growing-web-examples/index": "workspace:*",
+    "@growing-web-examples/react-demo": "workspace:*",
+    "@growing-web-examples/vue-router-demo": "workspace:*"
   }
 }

@@ -1,5 +1,6 @@
 {
-  "name": "@apps/nav",
+  "name": "nav",
+  "private": true,
   "exports": {
     ".": "./src/nav.js",
     "./Nav.vue": "./src/Nav.vue"

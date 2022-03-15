@@ -1,9 +1,0 @@
-{
-  "name": "systemjs",
-  "scripts": {
-    "build": "pnpm web-builder build --no-clean"
-  },
-  "dependencies": {
-    "system.js": "npm:systemjs@6.12.1"
-  }
-}

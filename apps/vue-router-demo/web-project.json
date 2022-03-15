@@ -6,9 +6,9 @@
     {
       "input": "src/index.js",
       "output": {
-        "dir": "${workspaceRoot}/dist/apps/vue-router-demo",
-        "formats": ["esm", "system"],
-        "entryFileNames": "[name]-[hash]-[format].js",
+        "dir": "dist",
+        "formats": ["esm"],
+        "entryFileNames": "[name].js",
         "externals": ["vue"],
         "globals": {
           "vue": "Vue"
