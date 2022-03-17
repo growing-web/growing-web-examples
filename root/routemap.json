@@ -11,7 +11,7 @@
       "path": "*",
       "element": "web-widget",
       "properties": {
-        "import": "@growing-web-examples/404"
+        "import": "@growing-web-examples/404-app"
       }
     }
   ]

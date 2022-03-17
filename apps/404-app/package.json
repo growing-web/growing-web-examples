@@ -1,5 +1,5 @@
 {
-  "name": "@growing-web-examples/404",
+  "name": "@growing-web-examples/404-app",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"

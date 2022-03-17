@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@growing-web/bootstrap": "workspace:*",
-    "@growing-web-examples/404": "workspace:*",
+    "@growing-web-examples/404-app": "workspace:*",
     "@growing-web-examples/home-app": "workspace:*"
   }
 }

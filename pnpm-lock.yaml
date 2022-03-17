@@ -13,7 +13,7 @@ importers:
       prettier: 2.5.1
       turbo: 1.1.6
 
-  apps/404:
+  apps/404-app:
     specifiers:
       '@web-widget/container': ^0.0.23
     devDependencies:
@@ -129,7 +129,7 @@ importers:
 
   root:
     specifiers:
-      '@growing-web-examples/404': workspace:*
+      '@growing-web-examples/404-app': workspace:*
       '@growing-web-examples/home-app': workspace:*
       '@growing-web/bootstrap': workspace:*
       '@growing-web/dancf-provider': workspace:*
@@ -138,7 +138,7 @@ importers:
       html-minifier-terser: ^7.0.0-alpha.2
       lodash.merge: ^4.6.2
     dependencies:
-      '@growing-web-examples/404': link:../apps/404
+      '@growing-web-examples/404-app': link:../apps/404-app
       '@growing-web-examples/home-app': link:../apps/home-app
       '@growing-web/bootstrap': link:../packages/bootstrap
     devDependencies:
