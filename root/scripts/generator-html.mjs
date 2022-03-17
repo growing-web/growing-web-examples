@@ -14,7 +14,17 @@ const html = transformFragment(template, {
     const string = isDevelopment ? JSON.stringify(importmap, null, 2) : JSON.stringify(importmap);
     return `
       <script type="importmap">${string}</script>
-      <script async src="https://es.dancf.com/npm:es-module-shims@0.12.8/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+      <script>
+        (function() {
+          if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) {
+            document.head.appendChild(Object.assign(document.createElement('script'), {
+              src: 'https://es.dancf.com/npm:es-module-shims@0.12.8/dist/es-module-shims.min.js',
+              crossorigin: 'anonymous',
+              async: true
+            }));
+          }
+        })();
+      </script>
     `;
   },
   data: `<script type="application/sd+json">{}</script>`,

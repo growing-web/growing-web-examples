@@ -36,4 +36,4 @@ yarn-error.log*
 dist
 index.html
 importmap.json
-webmodules.dev.json
+web-modules.dev.json
