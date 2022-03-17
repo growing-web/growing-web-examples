@@ -134,7 +134,7 @@ importers:
       '@growing-web-examples/vue-router-app': workspace:*
       '@growing-web-examples/vue2-app': workspace:*
       '@growing-web/bootstrap': workspace:*
-      '@growing-web/wpm': ^0.0.1
+      '@growing-web/wpm': ^0.0.3
       '@web/dev-server': ^0.1.30
       html-minifier-terser: ^7.0.0-alpha.2
     dependencies:
@@ -144,7 +144,7 @@ importers:
       '@growing-web-examples/vue2-app': link:../apps/vue2-app
       '@growing-web/bootstrap': link:../packages/bootstrap
     devDependencies:
-      '@growing-web/wpm': 0.0.1
+      '@growing-web/wpm': 0.0.3
       '@web/dev-server': 0.1.30
       html-minifier-terser: 7.0.0-alpha.2
 
@@ -890,8 +890,8 @@ packages:
       history: 5.3.0
     dev: false
 
-  /@growing-web/wpm/0.0.1:
-    resolution: {integrity: sha512-pknaNKg0gS8wz3AS2ThIXswnyrwZMUqYgoDwahvzOIVaPB7JP5EYvKlZH+ymTjdTEyin91CWNXvNuhht9OrxQg==}
+  /@growing-web/wpm/0.0.3:
+    resolution: {integrity: sha512-psobduuMijHsigv5lqHggB5GtomiIrv/Z2bC2dNcyIP3j6jobl/KtMlDW9OGMUJUSggivFOB9ge8DKbOzIXrFQ==}
     hasBin: true
     dependencies:
       '@growing-web/dancf-provider': 0.0.1

@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "export NODE_ENV=development && npm run build && npm run dev:serve",
     "build": "npm run generator-importmap && npm run generator-html",
-    "generator-importmap": "wpm install",
+    "generator-importmap": "wpm install --force",
     "generator-html": "node scripts/generator-html.mjs",
     "dev:serve": "web-dev-server --app-index index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@web/dev-server": "^0.1.30",
     "html-minifier-terser": "^7.0.0-alpha.2",
-    "@growing-web/wpm": "^0.0.1"
+    "@growing-web/wpm": "^0.0.3"
   },
   "dependencies": {
     "@growing-web/bootstrap": "workspace:*",
