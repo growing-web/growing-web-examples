@@ -16,7 +16,7 @@ export default new Router({
   base: '/vue-router-demo',
   routes: [
     {
-      path: '/',
+      path: '/vue-router',
       component: Layout,
       props(route) {
         const matched = route.matched;
