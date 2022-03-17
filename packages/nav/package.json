@@ -1,6 +1,5 @@
 {
-  "name": "nav",
-  "private": true,
+  "name": "@growing-web-examples/nav",
   "exports": {
     ".": "./src/nav.js",
     "./Nav.vue": "./src/Nav.vue"
