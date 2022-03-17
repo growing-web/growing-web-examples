@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/vue-router-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "pnpm build -- --watch",
-    "build": "pnpm web-builder build"
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@growing-web-examples/nav": "workspace:*",
