@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/vue2-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -9,8 +9,9 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm web-builder dev",
-    "build": "pnpm web-builder build"
+    "watch": "pnpm build -- --watch",
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@growing-web-examples/nav": "workspace:*",

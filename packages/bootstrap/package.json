@@ -5,9 +5,12 @@
     "access": "public"
   },
   "exports": "./dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "pnpm web-builder build  --no-clean"
+    "build": "pnpm web-builder build",
+    "dev": "pnpm build -- --watch"
   },
   "dependencies": {
     "@growing-web/web-router": "^0.0.2",

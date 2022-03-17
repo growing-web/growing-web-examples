@@ -1,15 +1,15 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Layout from '../layout/Layout.vue';
-import HomePage from '../pages/Home.vue';
-import Page1 from '../pages/Page1.vue';
-import Page1Header from '../layout/Page1Header.vue';
-import Page2 from '../pages/Page2.vue';
-import Page2Footer from '../layout/Page2Footer.vue';
-import VuejsDialog from "vuejs-dialog"
+import Vue from 'vue'
+import Router from 'vue-router'
+import Layout from '../layout/Layout.vue'
+import HomePage from '../pages/Home.vue'
+import Page1 from '../pages/Page1.vue'
+import Page1Header from '../layout/Page1Header.vue'
+import Page2 from '../pages/Page2.vue'
+import Page2Footer from '../layout/Page2Footer.vue'
+import VuejsDialog from 'vuejs-dialog'
 
-Vue.use(Router);
-Vue.use(VuejsDialog);
+Vue.use(Router)
+Vue.use(VuejsDialog)
 
 export default new Router({
   mode: 'history',
@@ -19,7 +19,7 @@ export default new Router({
       path: '/vue-router',
       component: Layout,
       props(route) {
-        const matched = route.matched;
+        const matched = route.matched
         /*
         let header = null;
         let footer = null;
@@ -34,9 +34,9 @@ export default new Router({
             footer = matched[1].meta.footer;
           }
           */
-          return matched[1].meta;
+          return matched[1].meta
         }
-        return {};
+        return {}
       },
       children: [
         {
@@ -50,7 +50,7 @@ export default new Router({
           component: Page1,
           meta: {
             header: Page1Header,
-            footer: false
+            footer: false,
           },
         },
         {
