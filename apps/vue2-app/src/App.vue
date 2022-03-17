@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Nav from '@apps/nav/Nav.vue'
+import Nav from '@growing-web-examples/nav/Nav.vue'
 import Todolist from './Todolist.vue'
 export default {
   name: 'app',

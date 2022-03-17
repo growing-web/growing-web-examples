@@ -1,18 +1,12 @@
 {
-  "$schema": "https://unpkg.com/@growing-web/web-builder-config@latest/web-project-schema.json",
+  "$schema": "https://unpkg.com/@growing-web/schema@latest/index.json",
   "schemaVersion": "1.0.0",
   "entries": [
     {
-      "input": "src/main.js",
+      "input": "src/index.js",
       "output": {
-        "dir": "dist",
-        "formats": ["esm"],
-        "entryFileNames": "[name].js",
         "externals": ["vue"]
       }
     }
-  ],
-  "server": {
-    "port": 6060
-  }
+  ]
 }

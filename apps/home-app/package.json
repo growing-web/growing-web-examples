@@ -4,17 +4,19 @@
   "publishConfig": {
     "access": "public"
   },
-  "exports": "./dist/main.js",
-  "files": ["dist"],
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "pnpm web-builder dev",
-    "build": "pnpm web-builder build --no-clean"
+    "build": "pnpm web-builder build"
   },
   "devDependencies": {
     "@web-widget/container": "^0.0.23"
   },
   "dependencies": {
-    "nav": "workspace:*"
+    "@growing-web-examples/nav": "workspace:*"
   },
   "license": "MIT"
 }
