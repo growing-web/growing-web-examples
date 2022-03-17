@@ -131,16 +131,20 @@ importers:
     specifiers:
       '@growing-web-examples/404-app': workspace:*
       '@growing-web-examples/home-app': workspace:*
-      '@growing-web-examples/wpm': ^0.0.1
+      '@growing-web-examples/vue-router-app': workspace:*
+      '@growing-web-examples/vue2-app': workspace:*
       '@growing-web/bootstrap': workspace:*
+      '@growing-web/wpm': ^0.0.1
       '@web/dev-server': ^0.1.30
       html-minifier-terser: ^7.0.0-alpha.2
     dependencies:
       '@growing-web-examples/404-app': link:../apps/404-app
       '@growing-web-examples/home-app': link:../apps/home-app
+      '@growing-web-examples/vue-router-app': link:../apps/vue-router-app
+      '@growing-web-examples/vue2-app': link:../apps/vue2-app
       '@growing-web/bootstrap': link:../packages/bootstrap
     devDependencies:
-      '@growing-web-examples/wpm': 0.0.1
+      '@growing-web/wpm': 0.0.1
       '@web/dev-server': 0.1.30
       html-minifier-terser: 7.0.0-alpha.2
 
@@ -550,17 +554,19 @@ packages:
   /@gar/promisify/1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
-  /@growing-web-examples/wpm/0.0.1:
-    resolution: {integrity: sha512-cIwS9TArz1k4CUoAqW/k+nO0dTS3lqCB3KGq7ZgFlZ2KeJ11v3lH11dg8/PLHTR+9Rok+qdA4pASFf1W4zMoJQ==}
-    hasBin: true
+  /@growing-web/dancf-provider/0.0.1:
+    resolution: {integrity: sha512-lyj48dfY5fqfgaxwjQ044cqN1Hx5ZCs+Kr4n0nDDYl4tERD+nnK5LVxdeWD0fp+wMmS7xxE9+tjFGX5aMhVVxw==}
     dependencies:
-      '@growing-web/dancf-provider': link:packages/dancf-provider
+      '@babel/core': 7.17.5
+      '@babel/preset-typescript': 7.16.7_@babel+core@7.17.5
+      '@jspm/core': 2.0.0-beta.19
       '@jspm/generator': 1.0.0-beta.29
-      commander: 9.0.0
-      json-schema-ref-parser: 9.0.9
-      lodash.merge: 4.6.2
-      semver: 7.3.5
-      single-line-log: 1.1.2
+      '@jspm/import-map': 0.3.3
+      es-module-lexer: 0.10.0
+      ipfs-client: 0.7.7
+      make-fetch-happen: 8.0.14
+      sver: 1.8.3
+      typescript: 4.6.2
     transitivePeerDependencies:
       - bufferutil
       - google-protobuf
@@ -883,6 +889,25 @@ packages:
     dependencies:
       history: 5.3.0
     dev: false
+
+  /@growing-web/wpm/0.0.1:
+    resolution: {integrity: sha512-pknaNKg0gS8wz3AS2ThIXswnyrwZMUqYgoDwahvzOIVaPB7JP5EYvKlZH+ymTjdTEyin91CWNXvNuhht9OrxQg==}
+    hasBin: true
+    dependencies:
+      '@growing-web/dancf-provider': 0.0.1
+      '@jspm/generator': 1.0.0-beta.29
+      commander: 9.0.0
+      json-schema-ref-parser: 9.0.9
+      lodash.merge: 4.6.2
+      semver: 7.3.5
+      single-line-log: 1.1.2
+    transitivePeerDependencies:
+      - bufferutil
+      - google-protobuf
+      - node-fetch
+      - supports-color
+      - utf-8-validate
+    dev: true
 
   /@improbable-eng/grpc-web/0.14.1:
     resolution: {integrity: sha512-XaIYuunepPxoiGVLLHmlnVminUGzBTnXr8Wv7khzmLWbNw4TCwJKX09GSMJlKhu/TRk6gms0ySFxewaETSBqgw==}

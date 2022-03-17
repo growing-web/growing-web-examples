@@ -1,6 +1,6 @@
 {
-  "name": "@growing-web-examples/vue-router-demo",
-  "version": "0.0.1",
+  "name": "@growing-web-examples/vue-router-app",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
   },
