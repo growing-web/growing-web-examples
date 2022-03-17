@@ -9,11 +9,14 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm web-builder dev",
+    "dev": "pnpm build -- --watch",
     "build": "pnpm web-builder build"
   },
   "devDependencies": {
     "@web-widget/container": "^0.0.23"
+  },
+  "dependencies": {
+    "@growing-web-examples/nav": "workspace:*"
   },
   "license": "MIT"
 }

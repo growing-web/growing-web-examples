@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm web-builder dev",
+    "dev": "pnpm build -- --watch",
     "build": "pnpm web-builder build"
   },
   "devDependencies": {
