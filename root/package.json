@@ -2,6 +2,9 @@
   "name": "@growing-web-examples/root",
   "version": "0.0.2",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     "./index.html": "./index.html",
     "./importmap.json": "./importmap.json",
