@@ -1,8 +1,7 @@
 {
   "defaultProvider": "dancf",
   "providers": {},
-  "env": ["production", "browser", "module"],
-  "dependencies": {
+  "dependencies": [{
     "$ref": "./package.json#/dependencies"
-  }
+  }]
 }

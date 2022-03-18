@@ -11,7 +11,7 @@
     "./routemap.json": "./routemap.json"
   },
   "scripts": {
-    "dev": "export NODE_ENV=development && npm run build && npm run dev:serve",
+    "dev": "npm run build && npm run dev:serve",
     "build": "npm run generator-importmap && npm run generator-html",
     "generator-importmap": "wpm install --force",
     "generator-html": "node scripts/generator-html.mjs",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@web/dev-server": "^0.1.30",
     "html-minifier-terser": "^7.0.0-alpha.2",
-    "@growing-web/wpm": "^0.0.3"
+    "@growing-web/wpm": "^0.0.5"
   },
   "dependencies": {
     "@growing-web/bootstrap": "workspace:*",
