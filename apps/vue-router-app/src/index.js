@@ -5,23 +5,22 @@ import './app.css?style-provider'
 
 Vue.config.productionTip = false
 
-import allStyleProvider from 'virtual:style-provider?query=~/*';
+import allStyleProvider from 'virtual:style-provider?query=~/*'
 
 export default (props) => {
-  let appWrap;
-  let app;
-  let allStyle;
+  let appWrap
+  let app
+  let allStyle
 
   return {
     async bootstrap({ container }) {
-      allStyle = allStyleProvider(container);
+      allStyle = allStyleProvider(container)
     },
     async mount(props) {
-      appWrap = document.createElement('div');
-
-      props.container.appendChild(appWrap);
-      allStyle.mount();
-
+      appWrap = document.createElement('div')
+      console.log(props.container)
+      props.container.appendChild(appWrap)
+      allStyle.mount()
       app = new Vue({
         router,
         el: appWrap,
@@ -29,15 +28,15 @@ export default (props) => {
           host: props,
         },
         render(h) {
-          return h(App);
-        }
-      });
+          return h(App)
+        },
+      })
     },
     async unmount({ container }) {
-      app.$destroy();
-      allStyle.unmount();
-      container.innerHTML = '';
-      appWrap = app = null;
+      app.$destroy()
+      allStyle.unmount()
+      container.innerHTML = ''
+      appWrap = app = null
     },
-  };
-};
+  }
+}
