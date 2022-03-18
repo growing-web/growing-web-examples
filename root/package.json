@@ -28,7 +28,7 @@
     "@growing-web/bootstrap": "workspace:*",
     "@growing-web-examples/vue2-app": "workspace:*",
     "@growing-web-examples/404-app": "workspace:*",
-    "@growing-web-examples/react-demo": "workspace:*",
+    "@growing-web-examples/react-app": "workspace:*",
     "@growing-web-examples/vue-router-app": "workspace:*",
     "@growing-web-examples/home-app": "workspace:*"
   }

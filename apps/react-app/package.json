@@ -1,5 +1,5 @@
 {
-  "name": "@growing-web-examples/react-demo",
+  "name": "@growing-web-examples/react-app",
   "version": "0.0.3",
   "publishConfig": {
     "access": "public"

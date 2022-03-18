@@ -87,7 +87,7 @@ importers:
     specifiers:
       '@growing-web-examples/404-app': workspace:*
       '@growing-web-examples/home-app': workspace:*
-      '@growing-web-examples/react-demo': workspace:*
+      '@growing-web-examples/react-app': workspace:*
       '@growing-web-examples/vue-router-app': workspace:*
       '@growing-web-examples/vue2-app': workspace:*
       '@growing-web-examples/wpm': ^0.0.2
@@ -98,11 +98,12 @@ importers:
     dependencies:
       '@growing-web-examples/404-app': link:../apps/404-app
       '@growing-web-examples/home-app': link:../apps/home-app
-      '@growing-web-examples/react-demo': link:../apps/react-app
+      '@growing-web-examples/react-app': link:../apps/react-app
       '@growing-web-examples/vue-router-app': link:../apps/vue-router-app
       '@growing-web-examples/vue2-app': link:../apps/vue2-app
       '@growing-web/bootstrap': link:../packages/bootstrap
     devDependencies:
+      '@growing-web-examples/wpm': 0.0.2
       '@growing-web/wpm': 0.0.5
       '@web/dev-server': 0.1.30
       html-minifier-terser: 7.0.0-alpha.2
