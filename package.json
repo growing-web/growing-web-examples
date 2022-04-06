@@ -25,6 +25,6 @@
   },
   "packageManager": "pnpm@6.32.0",
   "dependencies": {
-    "@growing-web/web-builder": "^0.0.3"
+    "@growing-web/web-builder": "^0.0.5"
   }
 }
