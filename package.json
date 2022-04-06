@@ -1,0 +1,30 @@
+{
+  "name": "examples-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "root/",
+    "packages/*"
+  ],
+  "scripts": {
+    "stub": "pnpm run prepack --filter ./packages -- --stub",
+    "postinstall": "pnpm run stub",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@6.32.0",
+  "dependencies": {
+    "@growing-web/web-builder": "^0.0.3"
+  }
+}

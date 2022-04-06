@@ -1,0 +1,23 @@
+{
+  "name": "@growing-web-examples/404-app",
+  "version": "0.0.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "pnpm build -- --watch",
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.23"
+  },
+  "dependencies": {
+    "@growing-web-examples/nav": "workspace:*"
+  },
+  "license": "MIT"
+}

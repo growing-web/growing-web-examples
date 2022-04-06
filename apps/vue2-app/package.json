@@ -1,0 +1,28 @@
+{
+  "name": "@growing-web-examples/vue2-app",
+  "version": "0.0.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "pnpm build -- --watch",
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@growing-web-examples/nav": "workspace:*",
+    "vue": "^2.6.12"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.23",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "license": "MIT"
+}

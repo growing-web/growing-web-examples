@@ -1,0 +1,26 @@
+{
+  "name": "@growing-web-examples/vue-router-app",
+  "version": "0.0.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "pnpm build -- --watch",
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@growing-web-examples/nav": "workspace:*",
+    "vue": "^2.6.12",
+    "vue-router": "3.0.1",
+    "vuejs-dialog": "1.4.2"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.23"
+  },
+  "license": "MIT"
+}

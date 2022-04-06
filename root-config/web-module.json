@@ -1,0 +1,7 @@
+{
+  "defaultProvider": "dancf",
+  "providers": {},
+  "dependencies": [{
+    "$ref": "./package.json#/dependencies"
+  }]
+}
