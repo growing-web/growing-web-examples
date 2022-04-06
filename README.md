@@ -8,18 +8,26 @@
 * 使用导入映射垫片解决浏览器兼容问题
 * 使用 Web Builder 构建应用（非必需项）
 
-## 目录
-
-Growing Web 没有约定目录组织方式。
-
-* `apps/*` 微应用
-* `packages/*` 公共依赖
-* `root-config` 站点根配置
-
 ## 开发
+
+初始化：
 
 ```bash
 pnpm install
+pnpm run build
+```
+
+运行根服务器：
+
+```bash
 cd root-config
 pnpm run dev
 ```
+
+## 目录
+
+Growing Web 没有约定目录组织方式，当前示例仓库的目录设计：
+
+* `apps/*` 微应用包
+* `packages/*` 公共依赖包
+* `root-config` 站点根配置包
