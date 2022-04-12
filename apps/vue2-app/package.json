@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/vue2-app",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "publishConfig": {
     "access": "public"
   },
