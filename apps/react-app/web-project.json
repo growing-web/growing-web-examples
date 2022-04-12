@@ -5,7 +5,7 @@
     {
       "input": "src/index.jsx",
       "output": {
-        "externals": ["react"]
+        "externals": ["react", "object-assign"]
       }
     }
   ]
