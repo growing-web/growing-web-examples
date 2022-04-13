@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/vue3-app",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +14,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@growing-web-example/nav": "workspace:*",
+    "@growing-web-examples/nav": "workspace:*",
     "vue": "^3.2.32"
   },
   "devDependencies": {

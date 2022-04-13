@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Nav from '@growing-web-example/nav/Nav.vue'
+import Nav from '@growing-web-examples/nav/Nav.vue'
 export default {
   name: 'app',
   components: {

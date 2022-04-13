@@ -1,4 +1,4 @@
-import nav from '@growing-web-example/nav'
+import nav from '@growing-web-examples/nav'
 export default () => ({
   mount({ container }) {
     container.innerHTML = `
