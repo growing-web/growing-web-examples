@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@growing-web/wpm": "^0.0.8",
+    "@growing-web/wpm": "^0.0.9",
     "@web/dev-server": "^0.1.30",
     "cross-env": "^7.0.3",
     "html-minifier-terser": "^7.0.0-alpha.2"
@@ -29,6 +29,8 @@
     "@growing-web-examples/home-app": "workspace:*",
     "@growing-web-examples/vue-router-app": "workspace:*",
     "@growing-web-examples/vue2-app": "workspace:*",
+    "@growing-web-examples/react-app": "workspace:*",
+    "@growing-web-examples/vue3-app": "workspace:*",
     "@growing-web/bootstrap": "workspace:*"
   }
 }

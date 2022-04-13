@@ -22,6 +22,20 @@
       }
     },
     {
+      "path": "/vue3",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/vue3-app"
+      }
+    },
+    {
+      "path": "/react",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/react-app"
+      }
+    },
+    {
       "path": "*",
       "element": "web-widget",
       "properties": {

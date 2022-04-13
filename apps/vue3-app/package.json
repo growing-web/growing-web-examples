@@ -1,5 +1,5 @@
 {
-  "name": "@growing-web-examples/home-app",
+  "name": "@growing-web-examples/vue3-app",
   "version": "0.0.8",
   "publishConfig": {
     "access": "public"
@@ -9,15 +9,17 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm build -- --watch",
+    "watch": "pnpm build -- --watch",
     "build": "pnpm web-builder build",
     "prepublishOnly": "pnpm run build"
   },
-  "devDependencies": {
-    "@web-widget/container": "^0.0.23"
-  },
   "dependencies": {
-    "@growing-web/nav": "workspace:*"
+    "@growing-web/nav": "workspace:*",
+    "vue": "^3.2.32"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.23",
+    "@vue/compiler-sfc": "^3.2.32"
   },
   "license": "MIT"
 }
