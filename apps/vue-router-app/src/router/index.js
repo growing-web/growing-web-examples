@@ -13,10 +13,10 @@ Vue.use(VuejsDialog)
 
 export default new Router({
   mode: 'history',
-  base: '/vue-router-demo',
+  base: '/vue-router',
   routes: [
     {
-      path: '/vue-router',
+      path: '/',
       component: Layout,
       props(route) {
         const matched = route.matched

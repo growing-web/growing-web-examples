@@ -15,7 +15,7 @@
       }
     },
     {
-      "path": "/vue-router",
+      "path": "/vue-router/*",
       "element": "web-widget",
       "properties": {
         "import": "@growing-web-examples/vue-router-app"
