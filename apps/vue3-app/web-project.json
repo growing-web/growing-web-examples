@@ -3,9 +3,9 @@
   "schemaVersion": "1.0.0",
   "entries": [
     {
-      "input": "src/index.jsx",
+      "input": "src/index.js",
       "output": {
-        "externals": ["react"]
+        "externals": ["vue"]
       }
     }
   ]

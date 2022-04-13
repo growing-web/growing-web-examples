@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/nav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": "./src/nav.js",
     "./Nav.vue": "./src/Nav.vue"
