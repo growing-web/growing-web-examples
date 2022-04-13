@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css?style-provider'
 import App from './App'
 import styleProvider from 'virtual:style-provider?query=~/*'
-import nav from '@growing-web/nav'
+import nav from '@growing-web-example/nav'
 
 export default () => {
   let vdom

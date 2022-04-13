@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/react-app",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +14,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@growing-web/nav": "workspace:*",
+    "@growing-web-example/nav": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

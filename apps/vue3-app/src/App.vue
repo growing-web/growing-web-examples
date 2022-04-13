@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './hello-world.vue'
-import Nav from '@growing-web/nav/Nav.vue'
+import Nav from '@growing-web-example/nav/Nav.vue'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 {
-  "name": "@growing-web/nav",
+  "name": "@growing-web-example/nav",
   "version": "0.0.2",
   "exports": {
     ".": "./src/nav.js",

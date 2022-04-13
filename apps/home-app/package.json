@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/home-app",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publishConfig": {
     "access": "public"
   },
@@ -17,7 +17,7 @@
     "@web-widget/container": "^0.0.23"
   },
   "dependencies": {
-    "@growing-web/nav": "workspace:*"
+    "@growing-web-example/nav": "workspace:*"
   },
   "license": "MIT"
 }

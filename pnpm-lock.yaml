@@ -15,30 +15,30 @@ importers:
 
   apps/404-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@web-widget/container': ^0.0.23
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
     devDependencies:
       '@web-widget/container': 0.0.23
 
   apps/home-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@web-widget/container': ^0.0.23
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
     devDependencies:
       '@web-widget/container': 0.0.23
 
   apps/react-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@web-widget/container': ^0.0.23
       react: ^17.0.2
       react-dom: ^17.0.2
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
@@ -46,13 +46,13 @@ importers:
 
   apps/vue-router-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@web-widget/container': ^0.0.23
       vue: ^2.6.12
       vue-router: 3.0.1
       vuejs-dialog: 1.4.2
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
       vue: 2.6.14
       vue-router: 3.0.1
       vuejs-dialog: 1.4.2
@@ -61,12 +61,12 @@ importers:
 
   apps/vue2-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@web-widget/container': ^0.0.23
       vue: ^2.6.12
       vue-template-compiler: ^2.6.12
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
       vue: 2.6.14
     devDependencies:
       '@web-widget/container': 0.0.23
@@ -74,12 +74,12 @@ importers:
 
   apps/vue3-app:
     specifiers:
-      '@growing-web/nav': workspace:*
+      '@growing-web-example/nav': workspace:*
       '@vue/compiler-sfc': ^3.2.32
       '@web-widget/container': ^0.0.23
       vue: ^3.2.32
     dependencies:
-      '@growing-web/nav': link:../../packages/nav
+      '@growing-web-example/nav': link:../../packages/nav
       vue: 3.2.32
     devDependencies:
       '@vue/compiler-sfc': 3.2.32
