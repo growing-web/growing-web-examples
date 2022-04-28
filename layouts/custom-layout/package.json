@@ -1,5 +1,5 @@
 {
-  "name": "@growing-web-examples/login-layout",
+  "name": "@growing-web-examples/custom-layout",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"

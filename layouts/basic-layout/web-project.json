@@ -6,7 +6,10 @@
       "input": "src/index.js"
     },
     {
-      "input": "src/vue2-adapter.js"
+      "input": "src/vue2-adapter.js",
+      "output": {
+        "externals": ["virtual:style-provider?query=~/*"]
+      }
     }
   ]
 }

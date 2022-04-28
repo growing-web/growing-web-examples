@@ -37,7 +37,7 @@ importers:
 
   apps/login-app:
     specifiers:
-      '@growing-web-examples/login-layout': workspace:*
+      '@growing-web-examples/custom-layout': workspace:*
       '@growing-web-examples/nav-widget': workspace:*
       '@growing-web-examples/shared': 0.0.2
       '@web-widget/container': ^0.0.25
@@ -46,7 +46,7 @@ importers:
       vue-router: 3.5.3
       vue-template-compiler: ^2.6.14
     dependencies:
-      '@growing-web-examples/login-layout': link:../../layouts/login-layout
+      '@growing-web-examples/custom-layout': link:../../layouts/custom-layout
       '@growing-web-examples/nav-widget': link:../nav-widget
       '@growing-web-examples/shared': link:../../packages/shared
       vue: 2.6.14
@@ -68,7 +68,7 @@ importers:
     devDependencies:
       '@web-widget/container': 0.0.25
 
-  layouts/login-layout:
+  layouts/custom-layout:
     specifiers:
       '@web-widget/container': ^0.0.25
     devDependencies:

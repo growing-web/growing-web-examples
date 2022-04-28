@@ -11,7 +11,6 @@ export function vue2Adapter(
   return {
     async bootstrap(props) {
       allStyle = allStyleProvider(props.container)
-      lifeCycle?.bootstrap?.(props)
     },
     async mount(props) {
       appWrap = document.createElement('div')
@@ -23,20 +22,13 @@ export function vue2Adapter(
         el: appWrap,
         render: (h) => h(App),
       })
-      lifeCycle?.mount?.(props)
     },
-    async update(props) {
-      lifeCycle?.update?.(props)
-    },
+
     async unmount(props) {
       app.$destroy()
       allStyle.unmount()
       props.container.innerHTML = ''
       appWrap = app = null
-      lifeCycle?.unmount?.(props)
-    },
-    async unload(props) {
-      lifeCycle?.update?.(props)
     },
   }
 }
