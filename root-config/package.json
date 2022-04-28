@@ -1,0 +1,35 @@
+{
+  "name": "@growing-web-examples/root-config",
+  "version": "0.0.2",
+  "description": "",
+  "license": "MIT",
+  "exports": {
+    "./importmap.json": "./importmap.json",
+    "./index.html": "./index.html",
+    "./routemap.json": "./routemap.json"
+  },
+  "scripts": {
+    "build": "npm run generator-importmap && npm run generator-html",
+    "dev": "npm run build && npm run dev:serve",
+    "dev:serve": "web-dev-server --app-index index.html",
+    "generator-html": "node scripts/generator-html.mjs",
+    "generator-importmap": "node scripts/generator-importmap.mjs"
+  },
+  "dependencies": {
+    "@growing-web-examples/cdm-app": "workspace:*",
+    "@growing-web-examples/login-app": "workspace:*",
+    "@growing-web-examples/shared": "workspace:*",
+    "@growing-web/bootstrap": "workspace:*",
+    "@growing-web/layout": "workspace:*"
+  },
+  "devDependencies": {
+    "@growing-web/wpm": "^0.0.13",
+    "@web/dev-server": "^0.1.31",
+    "dotenv": "^16.0.0",
+    "fs-extra": "^10.1.0",
+    "html-minifier-terser": "^7.0.0-alpha.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

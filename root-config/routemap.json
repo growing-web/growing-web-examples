@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/login-app"
+      }
+    },
+    {
+      "path": "/cdm-app/*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/cdm-app"
+      }
+    }
+  ]
+}

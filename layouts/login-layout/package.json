@@ -1,0 +1,22 @@
+{
+  "name": "@growing-web-examples/login-layout",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm web-builder build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.25"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@growing-web/layout": "workspace:*"
+  }
+}

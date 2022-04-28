@@ -1,0 +1,20 @@
+{
+  "name": "@growing-web/bootstrap",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm web-builder build",
+    "dev": "pnpm build -- --watch"
+  },
+  "dependencies": {
+    "@growing-web/web-router": "^0.0.2",
+    "@web-widget/container": "^0.0.24"
+  },
+  "license": "MIT"
+}

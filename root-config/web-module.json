@@ -1,0 +1,9 @@
+{
+  "defaultProvider": "nodemodules",
+  "providers": {},
+  "dependencies": [
+    {
+      "$ref": "./package.json#/dependencies"
+    }
+  ]
+}
