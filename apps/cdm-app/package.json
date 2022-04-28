@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/cdm-app",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "license": "MIT",
   "exports": "./dist/index.js",
   "files": [
@@ -15,7 +15,7 @@
   "dependencies": {
     "@growing-web-examples/basic-layout": "workspace:*",
     "@growing-web-examples/nav-widget": "workspace:*",
-    "@growing-web-examples/shared": "0.0.2",
+    "@growing-web-examples/shared": "0.0.3",
     "vue": "2.6.14",
     "vue-router": "3.5.3"
   },
