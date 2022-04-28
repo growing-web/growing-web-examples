@@ -1,4 +1,4 @@
-import { Layout } from '@growing-web/layout'
+import { Layout } from './layout'
 
 export function createLayout() {
   const layout = new Layout()

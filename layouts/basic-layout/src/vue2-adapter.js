@@ -1,17 +1,9 @@
-// @ts-ignore
 import allStyleProvider from 'virtual:style-provider?query=~/*'
-import type { LifeCycle } from '../types'
 
-interface Vue2AdapterOptions {
-  vueOptions?: Record<string, any>
-  lifeCycle?: LifeCycle
-}
-
-// TODO 类型定义完善
 export function vue2Adapter(
   Vue,
   App,
-  { vueOptions = {}, lifeCycle = {} }: Vue2AdapterOptions = {},
+  { vueOptions = {}, lifeCycle = {} } = {},
 ) {
   let appWrap
   let app

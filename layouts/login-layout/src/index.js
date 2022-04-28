@@ -1,14 +1,17 @@
-import { Layout } from '@growing-web/layout'
+import { Layout } from './layout'
 
 export function createLayout() {
   const layout = new Layout()
-  const event = layout.createCustomEvent('userInfo', {
-    userId: '1',
-    username: 'growing web',
+
+  const event = new CustomEvent('userInfo', {
+    detail: {
+      userId: '1',
+      username: 'growing web',
+    },
   })
 
   setTimeout(() => {
-    layout.dispatchEvent(event)
+    window.dispatchEvent(event)
   }, 3000)
 
   layout.setLifecycle({

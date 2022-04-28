@@ -19,8 +19,7 @@
     "@growing-web-examples/cdm-app": "workspace:*",
     "@growing-web-examples/login-app": "workspace:*",
     "@growing-web-examples/shared": "workspace:*",
-    "@growing-web/bootstrap": "workspace:*",
-    "@growing-web/layout": "workspace:*"
+    "@growing-web/bootstrap": "workspace:*"
   },
   "devDependencies": {
     "@growing-web/wpm": "^0.0.13",

@@ -16,7 +16,6 @@
     "@growing-web-examples/basic-layout": "workspace:*",
     "@growing-web-examples/nav-widget": "workspace:*",
     "@growing-web-examples/shared": "0.0.2",
-    "@growing-web/layout": "workspace:*",
     "vue": "2.6.14",
     "vue-router": "3.5.3"
   },
