@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "stub": "pnpm run prepack --filter ./packages -- --stub",
-    "postinstall": "pnpm run stub",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel"
   },
   "devDependencies": {
     "@growing-web/web-builder": "^0.0.7",
+    "@types/node": "^17.0.31",
     "cross-env": "^7.0.3",
     "prettier": "^2.6.2",
     "turbo": "^1.2.5"
   },
-  "packageManager": "pnpm@6.32.9"
+  "packageManager": "pnpm@7.0.0"
 }

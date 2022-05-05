@@ -15,6 +15,7 @@ const html = transformFragment(template, {
       nodeEnv === 'development'
         ? JSON.stringify(importmap, null, 2)
         : JSON.stringify(importmap)
+
     return `
       <script type="importmap">${string}</script>
       <script>

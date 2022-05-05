@@ -1,5 +1,5 @@
 {
-  "defaultProvider": "dancf",
+  "defaultProvider": "nodemodules",
   "providers": {},
   "dependencies": [
     {

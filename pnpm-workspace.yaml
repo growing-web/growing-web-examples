@@ -1,5 +1,6 @@
 packages:
   - 'apps/*'
-  - 'root-config/'
+  - 'apps/widgets/*'
   - 'packages/*'
-  - 'layouts/*'
+  - 'packages/layouts/*'
+  - 'root-config/'
