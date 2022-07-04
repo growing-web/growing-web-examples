@@ -1,77 +1,34 @@
-# Turborepo starter with pnpm
+# Growing Web 示例仓库
 
-This is an official starter turborepo.
+- 使用单体仓库组织不同的库、网站栏目、库，实现多人协作
+- 使用 [turbo](https://turborepo.org) 来管理单体仓库的构建命令。它通过分析包的依赖关系并来启动构建顺序、通过按需构建、并行构建提高性能
+- 使用 pnpm 代替 npm。提高单体仓库的依赖安装性能、使用它的 `workspace:*` 协议而不是具体的版本号来引用本地包
+- 使用 Web Router 与 Web Widget 将应用容器化，让应用具备集成与优化空间
+- 使用 wpm 生成导入映射
+- 使用导入映射垫片解决浏览器兼容问题
+- 使用 Web Builder 构建应用（非必需项）
 
-## What's inside?
+## 开发
 
-This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes the following packages/apps:
+初始化：
 
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-## Setup
-
-This repository is used in the `npx create-turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (PNPM).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
+```bash
+pnpm install
 pnpm run build
 ```
 
-### Develop
+运行根服务器：
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+```bash
+cd root-config
 pnpm run dev
 ```
 
-### Remote Caching
+## 目录
 
-Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+Growing Web 没有约定目录组织方式，当前示例仓库的目录设计：
 
-By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-pnpx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-pnpx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/features/pipelines)
-- [Caching](https://turborepo.org/docs/features/caching)
-- [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/features/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- `apps/*` 微应用包
+- `packages/*` 公共依赖包
+- `root-config` 站点根配置包
+- `layout` 页面布局包

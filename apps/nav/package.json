@@ -1,7 +1,0 @@
-{
-  "name": "@apps/nav",
-  "exports": {
-    ".": "./src/nav.js",
-    "./Nav.vue": "./src/Nav.vue"
-  }
-}

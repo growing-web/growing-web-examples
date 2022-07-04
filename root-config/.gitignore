@@ -25,6 +25,9 @@ yarn-error.log*
 # turbo
 .turbo
 
+# dist
 dist
-pnpm-global
-.local
+index.html
+!public/index.html
+importmap.json
+web-module.dev.json

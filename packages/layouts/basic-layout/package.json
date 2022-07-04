@@ -1,0 +1,25 @@
+{
+  "name": "@growing-web-examples/basic-layout",
+  "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./vue2-adapter": "./dist/vue2-adapter.js"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm web-builder build --no-clean",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.27"
+  },
+  "license": "MIT"
+}

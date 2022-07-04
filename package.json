@@ -1,28 +1,21 @@
 {
-  "name": "turborepo-basic-shared",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "root/",
-    "packages/*"
-  ],
+  "name": "growing-web-examples-monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "stub": "pnpm run prepack --filter ./packages -- --stub",
-    "postinstall": "pnpm run stub",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "clean": "npm run clean:apps && npm run clean:packages && rimraf node_modules",
+    "clean:apps": "rimraf 'apps/**/{dist,node_modules,.turbo}'",
+    "clean:packages": "rimraf 'packages/**/{dist,node_modules,.turbo}'"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
-    "turbo": "latest",
-    "@growing-web/web-builder": "^0.0.2-beta.3"
+    "@growing-web/web-builder": "^0.0.8",
+    "@types/node": "^18.0.1",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "turbo": "^1.3.1"
   },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  },
-  "packageManager": "pnpm@6.31.0"
+  "packageManager": "pnpm@7.0.0"
 }
