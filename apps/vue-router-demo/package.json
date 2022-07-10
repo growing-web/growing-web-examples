@@ -1,11 +1,14 @@
 {
   "name": "@growing-web-examples/app-vue",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "exports": {
     ".": "./dist/index.js"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "pnpm web-builder build --no-clean",
     "dev": "pnpm web-builder dev"

@@ -1,6 +1,7 @@
 {
   "name": "@growing-web-examples/root-config",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "private": true,
   "description": "",
   "license": "MIT",
   "exports": {

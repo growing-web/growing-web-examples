@@ -1,6 +1,6 @@
 {
   "name": "@growing-web-examples/widget-nav",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"

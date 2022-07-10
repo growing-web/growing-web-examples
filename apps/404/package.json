@@ -1,11 +1,14 @@
 {
   "name": "@growing-web-examples/app-404",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "exports": {
     ".": "./dist/main.js"
   },
   "main": "dist/main.js",
   "module": "dist/main.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "pnpm web-builder build --no-clean",
     "dev": "pnpm web-builder dev"
