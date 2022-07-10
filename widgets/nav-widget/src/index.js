@@ -1,18 +1,13 @@
-import { auth } from '@growing-web-examples/shared'
-
 export default function () {
   return {
     async mount({ container }) {
-      window.addEventListener('userInfo', (e) => {
-        console.log('[nav-widget]: 收到custom-layout信息:', e.detail)
-        auth.emit('user', e.detail)
-      })
-
       container.innerHTML = `
-      <nav>
-        <a is="web-link" href="/">custom</a> |
-        <a is="web-link" href="/cdm-app">cdm</a>
-      </nav>`
+      <a is="web-link" href="/">Home</a> |
+      <a is="web-link" href="/vue-router-demo">Vue Router Demo</a> |
+      <a is="web-link" href="/react">React Demo</a> |
+      <a is="web-link" href="/404">404</a> |
+      <a is="web-link" href="https://google.com">Google</a>
+      `
     },
 
     async unmount({ container }) {

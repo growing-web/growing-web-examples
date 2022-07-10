@@ -1,0 +1,22 @@
+{
+  "name": "@growing-web-examples/app-react",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./dist/main.js"
+  },
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "scripts": {
+    "build": "pnpm web-builder build --no-clean",
+    "dev": "pnpm web-builder dev"
+  },
+  "dependencies": {
+    "@growing-web-examples/basic-layout": "workspace:*",
+    "@growing-web-examples/widget-nav": "workspace:*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.23"
+  }
+}

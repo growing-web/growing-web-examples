@@ -4,14 +4,28 @@
       "path": "/",
       "element": "web-widget",
       "properties": {
-        "import": "@growing-web-examples/login-app"
+        "import": "@growing-web-examples/app-index"
       }
     },
     {
-      "path": "/cdm-app/*",
+      "path": "/react",
       "element": "web-widget",
       "properties": {
-        "import": "@growing-web-examples/cdm-app"
+        "import": "@growing-web-examples/app-react"
+      }
+    },
+    {
+      "path": "/vue-router-demo/*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/app-vue"
+      }
+    },
+    {
+      "path": "*",
+      "element": "web-widget",
+      "properties": {
+        "import": "@growing-web-examples/app-404"
       }
     }
   ]

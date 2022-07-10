@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@growing-web/web-schemas/web-builder.json",
   "entries": [
     {
-      "input": "src/index.js"
+      "input": "src/main.jsx"
     }
   ]
 }

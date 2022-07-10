@@ -15,11 +15,6 @@ export function createLayout() {
           display: flex;
           height: calc(100% - 50px);
         }
-        .wrapper aside {
-          width: 200px;
-          background: pink;
-          height: 100%;
-        }
         .wrapper main {
           flex: 1;
           background: #ddd;
@@ -29,7 +24,6 @@ export function createLayout() {
 
       <nav slot="nav"></nav>
       <section class="wrapper">
-        <aside> aside </aside>
         <main slot="main"></main>
       </section>
         `

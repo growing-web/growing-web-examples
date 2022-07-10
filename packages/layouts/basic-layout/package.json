@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm web-builder build --no-clean",
+    "build": "pnpm web-builder build --no-clean && node scripts/copy.mjs",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {

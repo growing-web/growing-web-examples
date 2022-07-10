@@ -16,8 +16,10 @@
     "generator-importmap": "node scripts/generator-importmap.mjs"
   },
   "dependencies": {
-    "@growing-web-examples/cdm-app": "workspace:*",
-    "@growing-web-examples/login-app": "workspace:*",
+    "@growing-web-examples/app-404": "workspace:*",
+    "@growing-web-examples/app-index": "workspace:*",
+    "@growing-web-examples/app-react": "workspace:*",
+    "@growing-web-examples/app-vue": "workspace:*",
     "@growing-web-examples/shared": "workspace:*",
     "@growing-web/bootstrap": "workspace:*"
   },

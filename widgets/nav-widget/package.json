@@ -1,21 +1,22 @@
 {
-  "name": "@growing-web-examples/nav-widget",
+  "name": "@growing-web-examples/widget-nav",
   "version": "0.0.3",
-  "publishConfig": {
-    "access": "public"
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
   },
-  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "serve": "pnpm web-builder dev",
-    "dev": "pnpm build -- --watch",
     "build": "pnpm web-builder build",
-    "prepublishOnly": "pnpm run build"
+    "dev": "pnpm build -- --watch",
+    "prepublishOnly": "pnpm run build",
+    "serve": "pnpm web-builder dev"
   },
-  "dependencies": {
-    "@growing-web-examples/shared": "workspace:*"
-  },
-  "license": "MIT"
+  "publishConfig": {
+    "access": "public"
+  }
 }

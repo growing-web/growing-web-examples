@@ -7,15 +7,19 @@
     "dev": "turbo run dev --parallel",
     "clean": "npm run clean:apps && npm run clean:packages && rimraf node_modules",
     "clean:apps": "rimraf 'apps/**/{dist,node_modules,.turbo}'",
-    "clean:packages": "rimraf 'packages/**/{dist,node_modules,.turbo}'"
+    "clean:packages": "rimraf 'packages/**/{dist,node_modules,.turbo}'",
+    "release": "web-kit release --publish --ci"
   },
   "devDependencies": {
-    "@growing-web/web-builder": "^0.0.8",
+    "@growing-web/web-builder": "^0.1.4",
     "@types/node": "^18.0.1",
     "cross-env": "^7.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "turbo": "^1.3.1"
   },
-  "packageManager": "pnpm@7.0.0"
+  "packageManager": "pnpm@7.0.0",
+  "dependencies": {
+    "@growing-web/web-kit": "^0.2.0"
+  }
 }
