@@ -20,13 +20,21 @@ layout.setSlot('main', () => {
       appElement = document.createElement('div')
       container.appendChild(appElement)
 
-      vdom = ReactDOM.render(<App />, appElement)
+      if (ReactDOM.createRoot) {
+        // React >= 18
+        vdom = ReactDOM.createRoot(container);
+        vdom.render(<App />);
+      } else {
+        // React < 18
+        ReactDOM.render(<App />, container);
+      }
+
       style.mount()
     },
 
     async unmount() {
       style.unmount()
-      if (vdom.unmount) {
+      if (vdom && vdom.unmount) {
         // React >= 18
         vdom.unmount()
       } else {

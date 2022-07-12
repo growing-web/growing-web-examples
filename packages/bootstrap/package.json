@@ -13,7 +13,7 @@
     "dev": "pnpm build -- --watch"
   },
   "dependencies": {
-    "@growing-web/web-router": "^0.0.2",
+    "@growing-web/web-router": "^0.0.3-beta",
     "@web-widget/container": "^0.0.27"
   },
   "license": "MIT"

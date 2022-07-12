@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 importers:
 
@@ -83,10 +83,10 @@ importers:
 
   packages/bootstrap:
     specifiers:
-      '@growing-web/web-router': ^0.0.2
+      '@growing-web/web-router': ^0.0.3-beta
       '@web-widget/container': ^0.0.27
     dependencies:
-      '@growing-web/web-router': 0.0.2
+      '@growing-web/web-router': 0.0.3-beta
       '@web-widget/container': 0.0.27
 
   packages/layouts/basic-layout:
@@ -874,7 +874,6 @@ packages:
       sver: 1.8.3
       typescript: 4.7.4
     transitivePeerDependencies:
-      - bluebird
       - bufferutil
       - google-protobuf
       - node-fetch
@@ -903,7 +902,7 @@ packages:
       pkg-types: 0.3.3
       resolve: 1.22.1
       rollup: 2.76.0
-      rollup-plugin-esbuild: 4.9.1_xdytuivplwntmfjl5in533a7mi
+      rollup-plugin-esbuild: 4.9.1_esbuild@0.14.48+rollup@2.76.0
       rollup-plugin-node-polyfills: 0.2.1
       rollup-plugin-peer-deps-external: 2.2.4_rollup@2.76.0
     transitivePeerDependencies:
@@ -920,8 +919,8 @@ packages:
     resolution: {integrity: sha512-7fzqfyGFejt5fbI6bZawyxh4jntML2TQ+rBnpU5oX5834T2MX08BGr6vpKs3lqnQiGrL+d3hPHWak5T1Ag/yZg==}
     dependencies:
       '@growing-web/web-builder-constants': 0.1.4
-      '@growing-web/web-builder-kit': 0.1.4_xdytuivplwntmfjl5in533a7mi
-      '@growing-web/web-builder-types': 0.1.4_hgr7pw7ewkgomote4jwv2gcfbe
+      '@growing-web/web-builder-kit': 0.1.4_esbuild@0.14.48+rollup@2.76.0
+      '@growing-web/web-builder-types': 0.1.4_39a3f7dbe4b28ce63a64e26d5d184509
       '@rollup/pluginutils': 4.2.1
       '@vitejs/plugin-react': 1.3.2
       '@vitejs/plugin-vue': 2.3.3_vite@2.9.14
@@ -936,77 +935,24 @@ packages:
       vite-plugin-vue2: 2.0.1_vite@2.9.14
     transitivePeerDependencies:
       - '@swc/core'
-      - arc-templates
-      - atpl
-      - babel-core
-      - bracket-template
-      - coffee-script
-      - dot
-      - dust
-      - dustjs-helpers
-      - dustjs-linkedin
-      - eco
-      - ect
-      - ejs
-      - haml-coffee
-      - hamlet
-      - hamljs
-      - handlebars
-      - hogan.js
-      - htmling
-      - jade
-      - jazz
-      - jqtpl
-      - just
       - less
-      - liquid-node
-      - liquor
-      - lodash
-      - marko
-      - mote
-      - mustache
-      - nunjucks
-      - plates
-      - pug
-      - qejs
-      - ractive
-      - razor-tmpl
-      - react
-      - react-dom
       - rollup
       - sass
-      - slm
-      - squirrelly
       - stylus
       - supports-color
-      - swig
-      - swig-templates
-      - teacup
-      - templayed
-      - then-jade
-      - then-pug
-      - tinyliquid
-      - toffee
-      - twig
-      - twing
       - uglify-js
-      - underscore
-      - vash
-      - velocityjs
       - vue
       - vue-template-compiler
-      - walrus
       - webpack
       - webpack-cli
-      - whiskers
     dev: true
 
   /@growing-web/web-builder-config/0.1.4_rollup@2.76.0:
     resolution: {integrity: sha512-TkLFAiQ3G5R/2jnZq8U5lL1mdj7gWl7xv4POKvljZQrqST/Pi9A8CytFj4e+gGGEQxULEU0PpYbCraC36P4Z6w==}
     dependencies:
       '@growing-web/web-builder-constants': 0.1.4
-      '@growing-web/web-builder-kit': 0.1.4_3apju3vqb3ruyb4gkxccifputa
-      '@growing-web/web-builder-types': 0.1.4_xdytuivplwntmfjl5in533a7mi
+      '@growing-web/web-builder-kit': 0.1.4_d81e9a6eb00ee34c078655c42415f498
+      '@growing-web/web-builder-types': 0.1.4_esbuild@0.14.48+rollup@2.76.0
       '@growing-web/web-schemas': 0.1.0
       bundle-require: 3.0.4_esbuild@0.14.48
       esbuild: 0.14.48
@@ -1040,78 +986,25 @@ packages:
       hookable: 5.1.1
     transitivePeerDependencies:
       - '@swc/core'
-      - arc-templates
-      - atpl
-      - babel-core
-      - bracket-template
-      - coffee-script
-      - dot
-      - dust
-      - dustjs-helpers
-      - dustjs-linkedin
-      - eco
-      - ect
-      - ejs
       - esbuild
-      - haml-coffee
-      - hamlet
-      - hamljs
-      - handlebars
-      - hogan.js
-      - htmling
-      - jade
-      - jazz
-      - jqtpl
-      - just
       - less
-      - liquid-node
-      - liquor
-      - lodash
-      - marko
-      - mote
-      - mustache
-      - nunjucks
-      - plates
-      - pug
-      - qejs
-      - ractive
-      - razor-tmpl
-      - react
-      - react-dom
       - rollup
       - sass
-      - slm
-      - squirrelly
       - stylus
       - supports-color
-      - swig
-      - swig-templates
-      - teacup
-      - templayed
-      - then-jade
-      - then-pug
-      - tinyliquid
-      - toffee
-      - twig
-      - twing
       - uglify-js
-      - underscore
-      - vash
-      - velocityjs
       - vite
       - vue
       - vue-template-compiler
-      - walrus
       - webpack
       - webpack-cli
-      - whiskers
     dev: true
 
-  /@growing-web/web-builder-kit/0.1.4_3apju3vqb3ruyb4gkxccifputa:
+  /@growing-web/web-builder-kit/0.1.4_d81e9a6eb00ee34c078655c42415f498:
     resolution: {integrity: sha512-P0QMf72l+QAEgakkA8VjkJ5Q5vehl0QCCrHVEArBVa5P9EKq1MnKY5B61wUUvx0RLTVRL/kbBpE8FWTk6OdUyQ==}
     dependencies:
       '@growing-web/web-builder-constants': 0.1.4
-      '@growing-web/web-builder-types': 0.1.4_hgr7pw7ewkgomote4jwv2gcfbe
+      '@growing-web/web-builder-types': 0.1.4_39a3f7dbe4b28ce63a64e26d5d184509
       clear: 0.1.0
       cmd-shim: 5.0.0
       consola: 2.15.3
@@ -1129,8 +1022,46 @@ packages:
       read-yaml-file: 2.1.0
       semver: 7.3.7
       strip-json-comments: 4.0.0
-      unctx: 1.1.4_gqmcsl7djyzp3otfwskiupgqwu
-      unplugin: 0.7.1_gqmcsl7djyzp3otfwskiupgqwu
+      unctx: 1.1.4_3418292fe34e32fdba65b4948a3cd0b5
+      unplugin: 0.7.1_3418292fe34e32fdba65b4948a3cd0b5
+      update-notifier: 6.0.2
+      vite: 2.9.14
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - less
+      - rollup
+      - sass
+      - stylus
+      - uglify-js
+      - webpack
+      - webpack-cli
+    dev: true
+
+  /@growing-web/web-builder-kit/0.1.4_esbuild@0.14.48+rollup@2.76.0:
+    resolution: {integrity: sha512-P0QMf72l+QAEgakkA8VjkJ5Q5vehl0QCCrHVEArBVa5P9EKq1MnKY5B61wUUvx0RLTVRL/kbBpE8FWTk6OdUyQ==}
+    dependencies:
+      '@growing-web/web-builder-constants': 0.1.4
+      '@growing-web/web-builder-types': 0.1.4_39a3f7dbe4b28ce63a64e26d5d184509
+      clear: 0.1.0
+      cmd-shim: 5.0.0
+      consola: 2.15.3
+      defu: 6.0.0
+      dotenv: 16.0.1
+      dotenv-expand: 8.0.3
+      execa: 6.1.0
+      fast-glob: 3.2.11
+      fs-extra: 10.1.0
+      lodash-es: 4.17.21
+      minimatch: 5.1.0
+      pathe: 0.3.2
+      picocolors: 1.0.0
+      pkg-types: 0.3.3
+      read-yaml-file: 2.1.0
+      semver: 7.3.7
+      strip-json-comments: 4.0.0
+      unctx: 1.1.4_39a3f7dbe4b28ce63a64e26d5d184509
+      unplugin: 0.7.1_39a3f7dbe4b28ce63a64e26d5d184509
       update-notifier: 6.0.2
       vite: 2.9.14
     transitivePeerDependencies:
@@ -1183,51 +1114,30 @@ packages:
       - webpack-cli
     dev: true
 
-  /@growing-web/web-builder-kit/0.1.4_xdytuivplwntmfjl5in533a7mi:
-    resolution: {integrity: sha512-P0QMf72l+QAEgakkA8VjkJ5Q5vehl0QCCrHVEArBVa5P9EKq1MnKY5B61wUUvx0RLTVRL/kbBpE8FWTk6OdUyQ==}
-    dependencies:
-      '@growing-web/web-builder-constants': 0.1.4
-      '@growing-web/web-builder-types': 0.1.4_hgr7pw7ewkgomote4jwv2gcfbe
-      clear: 0.1.0
-      cmd-shim: 5.0.0
-      consola: 2.15.3
-      defu: 6.0.0
-      dotenv: 16.0.1
-      dotenv-expand: 8.0.3
-      execa: 6.1.0
-      fast-glob: 3.2.11
-      fs-extra: 10.1.0
-      lodash-es: 4.17.21
-      minimatch: 5.1.0
-      pathe: 0.3.2
-      picocolors: 1.0.0
-      pkg-types: 0.3.3
-      read-yaml-file: 2.1.0
-      semver: 7.3.7
-      strip-json-comments: 4.0.0
-      unctx: 1.1.4_hgr7pw7ewkgomote4jwv2gcfbe
-      unplugin: 0.7.1_hgr7pw7ewkgomote4jwv2gcfbe
-      update-notifier: 6.0.2
-      vite: 2.9.14
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - less
-      - rollup
-      - sass
-      - stylus
-      - uglify-js
-      - webpack
-      - webpack-cli
-    dev: true
-
-  /@growing-web/web-builder-types/0.1.4_hgr7pw7ewkgomote4jwv2gcfbe:
+  /@growing-web/web-builder-types/0.1.4_39a3f7dbe4b28ce63a64e26d5d184509:
     resolution: {integrity: sha512-n+e2sd4SzJ8a/lvG+S3R2ZK4Z/0Yim/MbpVImf5TZLh5SgkCS+F4Ys1iIQtCRlDR0lzXzDrP9vQ1ZC0yRdpavw==}
     dependencies:
       '@growing-web/web-builder-constants': 0.1.4
       consola: 2.15.3
       hookable: 5.1.1
-      unplugin: 0.7.1_gqmcsl7djyzp3otfwskiupgqwu
+      unplugin: 0.7.1_3418292fe34e32fdba65b4948a3cd0b5
+      webpack: 5.73.0_esbuild@0.14.48
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - rollup
+      - uglify-js
+      - vite
+      - webpack-cli
+    dev: true
+
+  /@growing-web/web-builder-types/0.1.4_esbuild@0.14.48+rollup@2.76.0:
+    resolution: {integrity: sha512-n+e2sd4SzJ8a/lvG+S3R2ZK4Z/0Yim/MbpVImf5TZLh5SgkCS+F4Ys1iIQtCRlDR0lzXzDrP9vQ1ZC0yRdpavw==}
+    dependencies:
+      '@growing-web/web-builder-constants': 0.1.4
+      consola: 2.15.3
+      hookable: 5.1.1
+      unplugin: 0.7.1_d81e9a6eb00ee34c078655c42415f498
       webpack: 5.73.0_esbuild@0.14.48
     transitivePeerDependencies:
       - '@swc/core'
@@ -1244,7 +1154,7 @@ packages:
       '@growing-web/web-builder-constants': 0.1.4
       consola: 2.15.3
       hookable: 5.1.1
-      unplugin: 0.7.1_fnjawygb26xwsvc7eahfypgmyq
+      unplugin: 0.7.1_rollup@2.76.0+webpack@5.73.0
       webpack: 5.73.0
     transitivePeerDependencies:
       - '@swc/core'
@@ -1261,25 +1171,8 @@ packages:
       '@growing-web/web-builder-constants': 0.1.4
       consola: 2.15.3
       hookable: 5.1.1
-      unplugin: 0.7.1_z6mlqg6i7cjrcb73gtbucyz544
+      unplugin: 0.7.1_cf98b81bc8f8931107fb34c341633de7
       webpack: 5.73.0
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - rollup
-      - uglify-js
-      - vite
-      - webpack-cli
-    dev: true
-
-  /@growing-web/web-builder-types/0.1.4_xdytuivplwntmfjl5in533a7mi:
-    resolution: {integrity: sha512-n+e2sd4SzJ8a/lvG+S3R2ZK4Z/0Yim/MbpVImf5TZLh5SgkCS+F4Ys1iIQtCRlDR0lzXzDrP9vQ1ZC0yRdpavw==}
-    dependencies:
-      '@growing-web/web-builder-constants': 0.1.4
-      consola: 2.15.3
-      hookable: 5.1.1
-      unplugin: 0.7.1_3apju3vqb3ruyb4gkxccifputa
-      webpack: 5.73.0_esbuild@0.14.48
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -1304,70 +1197,17 @@ packages:
       v8-compile-cache: 2.3.0
     transitivePeerDependencies:
       - '@swc/core'
-      - arc-templates
-      - atpl
-      - babel-core
-      - bracket-template
-      - coffee-script
-      - dot
-      - dust
-      - dustjs-helpers
-      - dustjs-linkedin
-      - eco
-      - ect
-      - ejs
       - esbuild
-      - haml-coffee
-      - hamlet
-      - hamljs
-      - handlebars
-      - hogan.js
-      - htmling
-      - jade
-      - jazz
-      - jqtpl
-      - just
       - less
-      - liquid-node
-      - liquor
-      - lodash
-      - marko
-      - mote
-      - mustache
-      - nunjucks
-      - plates
-      - pug
-      - qejs
-      - ractive
-      - razor-tmpl
-      - react
-      - react-dom
       - sass
-      - slm
-      - squirrelly
       - stylus
       - supports-color
-      - swig
-      - swig-templates
-      - teacup
-      - templayed
-      - then-jade
-      - then-pug
-      - tinyliquid
-      - toffee
-      - twig
-      - twing
       - uglify-js
-      - underscore
-      - vash
-      - velocityjs
       - vite
       - vue
       - vue-template-compiler
-      - walrus
       - webpack
       - webpack-cli
-      - whiskers
     dev: true
 
   /@growing-web/web-kit/0.2.0:
@@ -1390,10 +1230,12 @@ packages:
       spawndamnit: 2.0.0
     dev: false
 
-  /@growing-web/web-router/0.0.2:
-    resolution: {integrity: sha512-uDadpPsuZnDleljzR7wXFn3n1EEDRHK3JkeTLLY8dOI5P3R08pQ41KTBUhXatAIMXivkPKyPETJ+myxbnXiZzw==}
+  /@growing-web/web-router/0.0.3-beta:
+    resolution: {integrity: sha512-s9cu8MoZ7ab2x7Ddq66s7T6K6bc4uoZ0t6wWFpuXki5A2zzntPMaKy1JjacXTodKGBlhaQXSeuFYTXMzM3E92A==}
     dependencies:
+      '@worker-tools/html': 2.0.0-pre.13
       history: 5.3.0
+      lodash-es: 4.17.21
     dev: false
 
   /@growing-web/web-schemas/0.1.0:
@@ -1419,7 +1261,6 @@ packages:
       semver: 7.3.7
       single-line-log: 1.1.2
     transitivePeerDependencies:
-      - bluebird
       - bufferutil
       - google-protobuf
       - node-fetch
@@ -1537,7 +1378,6 @@ packages:
       sver: 1.8.3
       typescript: 4.7.4
     transitivePeerDependencies:
-      - bluebird
       - bufferutil
       - google-protobuf
       - node-fetch
@@ -2305,60 +2145,6 @@ packages:
       vue-template-es2015-compiler: 1.9.1
     optionalDependencies:
       prettier: 2.7.1
-    transitivePeerDependencies:
-      - arc-templates
-      - atpl
-      - babel-core
-      - bracket-template
-      - coffee-script
-      - dot
-      - dust
-      - dustjs-helpers
-      - dustjs-linkedin
-      - eco
-      - ect
-      - ejs
-      - haml-coffee
-      - hamlet
-      - hamljs
-      - handlebars
-      - hogan.js
-      - htmling
-      - jade
-      - jazz
-      - jqtpl
-      - just
-      - liquid-node
-      - liquor
-      - lodash
-      - marko
-      - mote
-      - mustache
-      - nunjucks
-      - plates
-      - pug
-      - qejs
-      - ractive
-      - razor-tmpl
-      - react
-      - react-dom
-      - slm
-      - squirrelly
-      - swig
-      - swig-templates
-      - teacup
-      - templayed
-      - then-jade
-      - then-pug
-      - tinyliquid
-      - toffee
-      - twig
-      - twing
-      - underscore
-      - vash
-      - velocityjs
-      - walrus
-      - whiskers
     dev: true
 
   /@web-widget/container/0.0.23:
@@ -2557,6 +2343,19 @@ packages:
       '@webassemblyjs/ast': 1.11.1
       '@xtuc/long': 4.2.2
     dev: true
+
+  /@worker-tools/html/2.0.0-pre.13:
+    resolution: {integrity: sha512-MkmUNNX6fE/2tRM8iWpoSZ6hbZ4srMxzecPdyNvT4cydfYs6YEmFFv0w27839ALQxwtpsDCOKlDLEkhhzbMs9Q==}
+    dependencies:
+      '@worker-tools/stream-response': 0.1.0-pre.4
+    dev: false
+
+  /@worker-tools/stream-response/0.1.0-pre.4:
+    resolution: {integrity: sha512-PHMaXNbaavvtPWuPTjslNMmbFX0Wv4iKsa9ZiL+KkcTuXwSh5okMShYxt0st0bx4C137kIK/bBQqw/JBEKlP9Q==}
+    dependencies:
+      typed-array-utils: 0.3.0-pre.0
+      whatwg-stream-to-async-iter: 0.6.2
+    dev: false
 
   /@xtuc/ieee754/1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -2905,8 +2704,6 @@ packages:
       ssri: 8.0.1
       tar: 6.1.11
       unique-filename: 1.1.1
-    transitivePeerDependencies:
-      - bluebird
     dev: true
 
   /cache-content-type/1.0.1:
@@ -3234,167 +3031,6 @@ packages:
   /consolidate/0.15.1:
     resolution: {integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==}
     engines: {node: '>= 0.10.0'}
-    peerDependencies:
-      arc-templates: ^0.5.3
-      atpl: '>=0.7.6'
-      babel-core: ^6.26.3
-      bracket-template: ^1.1.5
-      coffee-script: ^1.12.7
-      dot: ^1.1.3
-      dust: ^0.3.0
-      dustjs-helpers: ^1.7.4
-      dustjs-linkedin: ^2.7.5
-      eco: ^1.1.0-rc-3
-      ect: ^0.5.9
-      ejs: ^3.1.5
-      haml-coffee: ^1.14.1
-      hamlet: ^0.3.3
-      hamljs: ^0.6.2
-      handlebars: ^4.7.6
-      hogan.js: ^3.0.2
-      htmling: ^0.0.8
-      jade: ^1.11.0
-      jazz: ^0.0.18
-      jqtpl: ~1.1.0
-      just: ^0.1.8
-      liquid-node: ^3.0.1
-      liquor: ^0.0.5
-      lodash: ^4.17.20
-      marko: ^3.14.4
-      mote: ^0.2.0
-      mustache: ^3.0.0
-      nunjucks: ^3.2.2
-      plates: ~0.4.11
-      pug: ^3.0.0
-      qejs: ^3.0.5
-      ractive: ^1.3.12
-      razor-tmpl: ^1.3.1
-      react: ^16.13.1
-      react-dom: ^16.13.1
-      slm: ^2.0.0
-      squirrelly: ^5.1.0
-      swig: ^1.4.2
-      swig-templates: ^2.0.3
-      teacup: ^2.0.0
-      templayed: '>=0.2.3'
-      then-jade: '*'
-      then-pug: '*'
-      tinyliquid: ^0.2.34
-      toffee: ^0.3.6
-      twig: ^1.15.2
-      twing: ^5.0.2
-      underscore: ^1.11.0
-      vash: ^0.13.0
-      velocityjs: ^2.0.1
-      walrus: ^0.10.1
-      whiskers: ^0.4.0
-    peerDependenciesMeta:
-      arc-templates:
-        optional: true
-      atpl:
-        optional: true
-      babel-core:
-        optional: true
-      bracket-template:
-        optional: true
-      coffee-script:
-        optional: true
-      dot:
-        optional: true
-      dust:
-        optional: true
-      dustjs-helpers:
-        optional: true
-      dustjs-linkedin:
-        optional: true
-      eco:
-        optional: true
-      ect:
-        optional: true
-      ejs:
-        optional: true
-      haml-coffee:
-        optional: true
-      hamlet:
-        optional: true
-      hamljs:
-        optional: true
-      handlebars:
-        optional: true
-      hogan.js:
-        optional: true
-      htmling:
-        optional: true
-      jade:
-        optional: true
-      jazz:
-        optional: true
-      jqtpl:
-        optional: true
-      just:
-        optional: true
-      liquid-node:
-        optional: true
-      liquor:
-        optional: true
-      lodash:
-        optional: true
-      marko:
-        optional: true
-      mote:
-        optional: true
-      mustache:
-        optional: true
-      nunjucks:
-        optional: true
-      plates:
-        optional: true
-      pug:
-        optional: true
-      qejs:
-        optional: true
-      ractive:
-        optional: true
-      razor-tmpl:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      slm:
-        optional: true
-      squirrelly:
-        optional: true
-      swig:
-        optional: true
-      swig-templates:
-        optional: true
-      teacup:
-        optional: true
-      templayed:
-        optional: true
-      then-jade:
-        optional: true
-      then-pug:
-        optional: true
-      tinyliquid:
-        optional: true
-      toffee:
-        optional: true
-      twig:
-        optional: true
-      twing:
-        optional: true
-      underscore:
-        optional: true
-      vash:
-        optional: true
-      velocityjs:
-        optional: true
-      walrus:
-        optional: true
-      whiskers:
-        optional: true
     dependencies:
       bluebird: 3.7.2
     dev: true
@@ -3402,167 +3038,6 @@ packages:
   /consolidate/0.16.0:
     resolution: {integrity: sha512-Nhl1wzCslqXYTJVDyJCu3ODohy9OfBMB5uD2BiBTzd7w+QY0lBzafkR8y8755yMYHAaMD4NuzbAw03/xzfw+eQ==}
     engines: {node: '>= 0.10.0'}
-    peerDependencies:
-      arc-templates: ^0.5.3
-      atpl: '>=0.7.6'
-      babel-core: ^6.26.3
-      bracket-template: ^1.1.5
-      coffee-script: ^1.12.7
-      dot: ^1.1.3
-      dust: ^0.3.0
-      dustjs-helpers: ^1.7.4
-      dustjs-linkedin: ^2.7.5
-      eco: ^1.1.0-rc-3
-      ect: ^0.5.9
-      ejs: ^3.1.5
-      haml-coffee: ^1.14.1
-      hamlet: ^0.3.3
-      hamljs: ^0.6.2
-      handlebars: ^4.7.6
-      hogan.js: ^3.0.2
-      htmling: ^0.0.8
-      jade: ^1.11.0
-      jazz: ^0.0.18
-      jqtpl: ~1.1.0
-      just: ^0.1.8
-      liquid-node: ^3.0.1
-      liquor: ^0.0.5
-      lodash: ^4.17.20
-      marko: ^3.14.4
-      mote: ^0.2.0
-      mustache: ^4.0.1
-      nunjucks: ^3.2.2
-      plates: ~0.4.11
-      pug: ^3.0.0
-      qejs: ^3.0.5
-      ractive: ^1.3.12
-      razor-tmpl: ^1.3.1
-      react: ^16.13.1
-      react-dom: ^16.13.1
-      slm: ^2.0.0
-      squirrelly: ^5.1.0
-      swig: ^1.4.2
-      swig-templates: ^2.0.3
-      teacup: ^2.0.0
-      templayed: '>=0.2.3'
-      then-jade: '*'
-      then-pug: '*'
-      tinyliquid: ^0.2.34
-      toffee: ^0.3.6
-      twig: ^1.15.2
-      twing: ^5.0.2
-      underscore: ^1.11.0
-      vash: ^0.13.0
-      velocityjs: ^2.0.1
-      walrus: ^0.10.1
-      whiskers: ^0.4.0
-    peerDependenciesMeta:
-      arc-templates:
-        optional: true
-      atpl:
-        optional: true
-      babel-core:
-        optional: true
-      bracket-template:
-        optional: true
-      coffee-script:
-        optional: true
-      dot:
-        optional: true
-      dust:
-        optional: true
-      dustjs-helpers:
-        optional: true
-      dustjs-linkedin:
-        optional: true
-      eco:
-        optional: true
-      ect:
-        optional: true
-      ejs:
-        optional: true
-      haml-coffee:
-        optional: true
-      hamlet:
-        optional: true
-      hamljs:
-        optional: true
-      handlebars:
-        optional: true
-      hogan.js:
-        optional: true
-      htmling:
-        optional: true
-      jade:
-        optional: true
-      jazz:
-        optional: true
-      jqtpl:
-        optional: true
-      just:
-        optional: true
-      liquid-node:
-        optional: true
-      liquor:
-        optional: true
-      lodash:
-        optional: true
-      marko:
-        optional: true
-      mote:
-        optional: true
-      mustache:
-        optional: true
-      nunjucks:
-        optional: true
-      plates:
-        optional: true
-      pug:
-        optional: true
-      qejs:
-        optional: true
-      ractive:
-        optional: true
-      razor-tmpl:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      slm:
-        optional: true
-      squirrelly:
-        optional: true
-      swig:
-        optional: true
-      swig-templates:
-        optional: true
-      teacup:
-        optional: true
-      templayed:
-        optional: true
-      then-jade:
-        optional: true
-      then-pug:
-        optional: true
-      tinyliquid:
-        optional: true
-      toffee:
-        optional: true
-      twig:
-        optional: true
-      twing:
-        optional: true
-      underscore:
-        optional: true
-      vash:
-        optional: true
-      velocityjs:
-        optional: true
-      walrus:
-        optional: true
-      whiskers:
-        optional: true
     dependencies:
       bluebird: 3.7.2
     dev: true
@@ -3681,11 +3156,6 @@ packages:
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 2.1.3
     dev: true
@@ -5075,7 +4545,7 @@ packages:
       it-to-stream: 1.0.0
       merge-options: 3.0.4
       nanoid: 3.3.4
-      native-fetch: 3.0.0_hmwa7nplpltavckpkeobtw6pv4
+      native-fetch: 3.0.0_@achingbrain+node-fetch@2.6.7
       node-fetch: /@achingbrain/node-fetch/2.6.7
       react-native-fetch-api: 2.0.0
       stream-to-it: 0.2.4
@@ -5625,7 +5095,6 @@ packages:
 
   /lodash-es/4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
 
   /lodash.camelcase/4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
@@ -5727,7 +5196,6 @@ packages:
       socks-proxy-agent: 5.0.1
       ssri: 8.0.1
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: true
 
@@ -6015,7 +5483,7 @@ packages:
       node-fetch: '*'
     dev: true
 
-  /native-fetch/3.0.0_hmwa7nplpltavckpkeobtw6pv4:
+  /native-fetch/3.0.0_@achingbrain+node-fetch@2.6.7:
     resolution: {integrity: sha512-G3Z7vx0IFb/FQ4JxvtqGABsOTIqRWvgQz6e+erkB+JJD6LrszQtMozEHI4EkmgZQvnGHrpLVzUWk7t4sJCIkVw==}
     peerDependencies:
       node-fetch: '*'
@@ -6364,8 +5832,6 @@ packages:
       async: 2.6.4
       debug: 3.2.7
       mkdirp: 0.5.6
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /postcss-selector-parser/6.0.10:
@@ -6422,11 +5888,6 @@ packages:
 
   /promise-inflight/1.0.1:
     resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
     dev: true
 
   /promise-retry/2.0.1:
@@ -6729,7 +6190,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-dts/4.2.2_sk2p66houzdp4ognhkknlnus3i:
+  /rollup-plugin-dts/4.2.2_rollup@2.76.0+typescript@4.7.4:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -6743,7 +6204,7 @@ packages:
       '@babel/code-frame': 7.18.6
     dev: true
 
-  /rollup-plugin-esbuild/4.9.1_xdytuivplwntmfjl5in533a7mi:
+  /rollup-plugin-esbuild/4.9.1_esbuild@0.14.48+rollup@2.76.0:
     resolution: {integrity: sha512-qn/x7Wz9p3Xnva99qcb+nopH0d2VJwVnsxJTGEg+Sh2Z3tqQl33MhOwzekVo1YTKgv+yAmosjcBRJygMfGrtLw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -7256,7 +6717,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /terser-webpack-plugin/5.3.3_mlvdagjq5audvc5xmaambfzdzm:
+  /terser-webpack-plugin/5.3.3_esbuild@0.14.48+webpack@5.73.0:
     resolution: {integrity: sha512-Fx60G5HNYknNTNQnzQ1VePRuu89ZVYWfjRAeT5rITuCY/1b08s49e5kSQwHDirKZWuoKOBRFS98EUUoZ9kLEwQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -7370,7 +6831,6 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
-    dev: true
 
   /tsscmp/1.0.6:
     resolution: {integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==}
@@ -7557,6 +7017,10 @@ packages:
       mime-types: 2.1.35
     dev: true
 
+  /typed-array-utils/0.3.0-pre.0:
+    resolution: {integrity: sha512-hzkk8/bpvqCayQnQAno11R8qOWHrkTHR9k+JYVEBpHAQMF2YfPqBMKKkSmeSw2Qd4ri+QugFmj7ca4ckSr4Z4Q==}
+    dev: false
+
   /typedarray-to-buffer/3.1.5:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
     dependencies:
@@ -7626,8 +7090,8 @@ packages:
       pretty-bytes: 6.0.0
       rimraf: 3.0.2
       rollup: 2.76.0
-      rollup-plugin-dts: 4.2.2_sk2p66houzdp4ognhkknlnus3i
-      rollup-plugin-esbuild: 4.9.1_xdytuivplwntmfjl5in533a7mi
+      rollup-plugin-dts: 4.2.2_rollup@2.76.0+typescript@4.7.4
+      rollup-plugin-esbuild: 4.9.1_esbuild@0.14.48+rollup@2.76.0
       scule: 0.2.1
       typescript: 4.7.4
       untyped: 0.4.4
@@ -7635,13 +7099,13 @@ packages:
       - supports-color
     dev: true
 
-  /unctx/1.1.4_gqmcsl7djyzp3otfwskiupgqwu:
+  /unctx/1.1.4_3418292fe34e32fdba65b4948a3cd0b5:
     resolution: {integrity: sha512-fQMML+GjUpIjQa0HBrrJezo2dFpTAbQbU0/KFKw4T5wpc9deGjLHSYthdfNAo2xSWM34csI6arzedezQkqtfGw==}
     dependencies:
       acorn: 8.7.1
       estree-walker: 2.0.2
       magic-string: 0.26.2
-      unplugin: 0.6.3_gqmcsl7djyzp3otfwskiupgqwu
+      unplugin: 0.6.3_3418292fe34e32fdba65b4948a3cd0b5
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -7649,13 +7113,13 @@ packages:
       - webpack
     dev: true
 
-  /unctx/1.1.4_hgr7pw7ewkgomote4jwv2gcfbe:
+  /unctx/1.1.4_39a3f7dbe4b28ce63a64e26d5d184509:
     resolution: {integrity: sha512-fQMML+GjUpIjQa0HBrrJezo2dFpTAbQbU0/KFKw4T5wpc9deGjLHSYthdfNAo2xSWM34csI6arzedezQkqtfGw==}
     dependencies:
       acorn: 8.7.1
       estree-walker: 2.0.2
       magic-string: 0.26.2
-      unplugin: 0.6.3_hgr7pw7ewkgomote4jwv2gcfbe
+      unplugin: 0.6.3_39a3f7dbe4b28ce63a64e26d5d184509
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -7704,7 +7168,7 @@ packages:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
 
-  /unplugin/0.6.3_gqmcsl7djyzp3otfwskiupgqwu:
+  /unplugin/0.6.3_3418292fe34e32fdba65b4948a3cd0b5:
     resolution: {integrity: sha512-CoW88FQfCW/yabVc4bLrjikN9HC8dEvMU4O7B6K2jsYMPK0l6iAnd9dpJwqGcmXJKRCU9vwSsy653qg+RK0G6A==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7730,7 +7194,7 @@ packages:
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.6.3_hgr7pw7ewkgomote4jwv2gcfbe:
+  /unplugin/0.6.3_39a3f7dbe4b28ce63a64e26d5d184509:
     resolution: {integrity: sha512-CoW88FQfCW/yabVc4bLrjikN9HC8dEvMU4O7B6K2jsYMPK0l6iAnd9dpJwqGcmXJKRCU9vwSsy653qg+RK0G6A==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7779,7 +7243,7 @@ packages:
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.7.1_3apju3vqb3ruyb4gkxccifputa:
+  /unplugin/0.7.1_3418292fe34e32fdba65b4948a3cd0b5:
     resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7800,12 +7264,39 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.14.48
       rollup: 2.76.0
+      vite: 2.9.14
       webpack: 5.73.0_esbuild@0.14.48
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.7.1_fnjawygb26xwsvc7eahfypgmyq:
+  /unplugin/0.7.1_39a3f7dbe4b28ce63a64e26d5d184509:
+    resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
+    peerDependencies:
+      esbuild: '>=0.13'
+      rollup: ^2.50.0
+      vite: ^2.3.0 || ^3.0.0-0
+      webpack: 4 || 5
+    peerDependenciesMeta:
+      esbuild:
+        optional: true
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      acorn: 8.7.1
+      chokidar: 3.5.3
+      esbuild: 0.14.48
+      rollup: 2.76.0
+      vite: 2.9.14
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.4.4
+    dev: true
+
+  /unplugin/0.7.1_cf98b81bc8f8931107fb34c341633de7:
     resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7825,12 +7316,13 @@ packages:
       acorn: 8.7.1
       chokidar: 3.5.3
       rollup: 2.76.0
+      vite: 2.9.14
       webpack: 5.73.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.7.1_gqmcsl7djyzp3otfwskiupgqwu:
+  /unplugin/0.7.1_d81e9a6eb00ee34c078655c42415f498:
     resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7851,34 +7343,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.14.48
       rollup: 2.76.0
-      vite: 2.9.14
       webpack: 5.73.0_esbuild@0.14.48
-      webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.4.4
-    dev: true
-
-  /unplugin/0.7.1_hgr7pw7ewkgomote4jwv2gcfbe:
-    resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
-    peerDependencies:
-      esbuild: '>=0.13'
-      rollup: ^2.50.0
-      vite: ^2.3.0 || ^3.0.0-0
-      webpack: 4 || 5
-    peerDependenciesMeta:
-      esbuild:
-        optional: true
-      rollup:
-        optional: true
-      vite:
-        optional: true
-      webpack:
-        optional: true
-    dependencies:
-      acorn: 8.7.1
-      chokidar: 3.5.3
-      esbuild: 0.14.48
-      rollup: 2.76.0
-      vite: 2.9.14
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
     dev: true
@@ -7908,7 +7373,7 @@ packages:
       webpack-virtual-modules: 0.4.4
     dev: true
 
-  /unplugin/0.7.1_z6mlqg6i7cjrcb73gtbucyz544:
+  /unplugin/0.7.1_rollup@2.76.0+webpack@5.73.0:
     resolution: {integrity: sha512-Z6hNDXDNh9aimMkPU1mEjtk+2ova8gh0y7rJeJdGH1vWZOHwF2lLQiQ/R97rv9ymmzEQXsR2fyMet72T8jy6ew==}
     peerDependencies:
       esbuild: '>=0.13'
@@ -7928,7 +7393,6 @@ packages:
       acorn: 8.7.1
       chokidar: 3.5.3
       rollup: 2.76.0
-      vite: 2.9.14
       webpack: 5.73.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.4
@@ -8102,61 +7566,8 @@ packages:
       vite: 2.9.14
       vue-template-babel-compiler: 1.2.0
     transitivePeerDependencies:
-      - arc-templates
-      - atpl
-      - babel-core
-      - bracket-template
-      - coffee-script
-      - dot
-      - dust
-      - dustjs-helpers
-      - dustjs-linkedin
-      - eco
-      - ect
-      - ejs
-      - haml-coffee
-      - hamlet
-      - hamljs
-      - handlebars
-      - hogan.js
-      - htmling
-      - jade
-      - jazz
-      - jqtpl
-      - just
-      - liquid-node
-      - liquor
-      - lodash
-      - marko
-      - mote
-      - mustache
-      - nunjucks
-      - plates
-      - pug
-      - qejs
-      - ractive
-      - razor-tmpl
-      - react
-      - react-dom
-      - slm
-      - squirrelly
       - supports-color
-      - swig
-      - swig-templates
-      - teacup
-      - templayed
-      - then-jade
-      - then-pug
-      - tinyliquid
-      - toffee
-      - twig
-      - twing
-      - underscore
-      - vash
-      - velocityjs
       - vue
-      - walrus
-      - whiskers
     dev: true
 
   /vite/2.9.14:
@@ -8327,7 +7738,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.3_mlvdagjq5audvc5xmaambfzdzm
+      terser-webpack-plugin: 5.3.3_esbuild@0.14.48+webpack@5.73.0
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -8335,6 +7746,12 @@ packages:
       - esbuild
       - uglify-js
     dev: true
+
+  /whatwg-stream-to-async-iter/0.6.2:
+    resolution: {integrity: sha512-ocSOY/Qe/Y5rLC3Xnz6gi8+A9niy+dUQSjnox/nRryKkV/NahxyspB/joyhYLBbQp1JAFrTBOVd/RUo0NrZ96g==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
 
   /whatwg-url/11.0.0:
     resolution: {integrity: sha512-RKT8HExMpoYx4igMiVMY83lN6UeITKJlBQ+vR/8ZJ8OCdSiN3RwCq+9gH0+Xzj0+5IrM6i4j/6LuvzbZIQgEcQ==}
