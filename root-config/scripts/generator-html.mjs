@@ -29,23 +29,20 @@ const html = transformFragment(template, {
       </script>
     `
   },
-  data: `<script type="application/sd+json">{}</script>`,
+  get routemap() {
+    const routemap = JSONReader(`./routemap.json`)
+    const string =
+      nodeEnv === 'development'
+        ? JSON.stringify(routemap, null, 2)
+        : JSON.stringify(routemap)
+    return `
+      <script type="routemap">${string}</script>
+    `
+  },
   get outlet() {
     const { routes } = JSONReader(`./routemap.json`)
     return `
-      <web-router>
-        ${routes
-          .map(({ path, element, properties }) => {
-            return `<web-route path="${path}" element="${element}" ${Object.entries(
-              properties,
-            )
-              .map(([name, value]) => {
-                return `${name}="${value}"`
-              })
-              .join(' ')}></web-route>`
-          })
-          .join('')}
-      </web-router>
+      <web-router></web-router>
     `
   },
   get entry() {

@@ -3,28 +3,28 @@
     {
       "path": "/",
       "element": "web-widget",
-      "properties": {
+      "attributes": {
         "import": "@growing-web-examples/app-index"
       }
     },
     {
       "path": "/react",
       "element": "web-widget",
-      "properties": {
+      "attributes": {
         "import": "@growing-web-examples/app-react"
       }
     },
     {
       "path": "/vue-router-demo/*",
       "element": "web-widget",
-      "properties": {
+      "attributes": {
         "import": "@growing-web-examples/app-vue"
       }
     },
     {
       "path": "*",
       "element": "web-widget",
-      "properties": {
+      "attributes": {
         "import": "@growing-web-examples/app-404"
       }
     }
